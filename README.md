@@ -1,9 +1,10 @@
 # SOEN-691-PROJECT
 BIG DATA ANALYTICS PROJECT
 
-Team Members 
+## Team Composition
 
 | Name  | Student id |
+| --- | --- |
 | 40087977 | Sai Krishna |
 | 40083289 | Dhaval Modi |
 | 40082236 | Manushree Mallaraju |
