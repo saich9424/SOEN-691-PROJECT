@@ -1,9 +1,8 @@
-# SOEN-691-PROJECT
-BIG DATA ANALYTICS PROJECT
+# SOEN-691-PROJECT BIG DATA ANALYTICS PROJECT
 
 ## Project Type
 
-Data Analysis
+Dataset Analysis
 
 ## Team Composition
 
