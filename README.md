@@ -1,6 +1,10 @@
 # SOEN-691-PROJECT
 BIG DATA ANALYTICS PROJECT
 
+## Project Type
+
+Data Analysis
+
 ## Team Composition
 
 | Name  | Student id |
