@@ -14,7 +14,7 @@ Dataset Analysis
 ## Abstract
 We have always been fascinated by the variety of restaurants in Bangalore. And each restaurant offers unique signature dishes. Currently there has been more than 12000 registered restaurants. And many more entrepreneurs are standing just around the corner to fill the night with more bars and restaurants. Keeping the new entrepreneurs in mind, with the available data (Zomato website data), we want to analyze which factor can be added to the success or failure of the newly opened restaurant. Some of the factors from the data includes theme, menus, cuisine, cost etc for a particular location. Our main goal is to analyze the existing data, convert them into graphs for simplification so that it can help new entrepreneurs to decide how, when and where they should open the restaurant to hit the success on first attempt.
 
-## I. Introduction (300 words): context, objectives, presentation of the problem to solve, related work.
+## Introduction
 ### Context
 
 The basic idea of analysing the Zomato dataset is to get a fair idea of the factors affecting the establishment of different types of restaurants in different places in Bengaluru. The market has not yet been saturated with the opening of new restaurants every day and the demand is increasing day by day. Nevertheless, it has become difficult for new restaurants to compete with existing restaurants despite increasing competition.
