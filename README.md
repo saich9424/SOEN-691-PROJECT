@@ -14,7 +14,7 @@ Dataset Analysis
 ## Abstract
 We have always been fascinated by the variety of restaurants in Bangalore. And each restaurant offers unique signature dishes. Currently there has been more than 12000 registered restaurants. And many more entrepreneurs are standing just around the corner to fill the night with more bars and restaurants. Keeping the new entrepreneurs in mind, with the available data (Zomato website data), we want to analyze which factor can be added to the success or failure of the newly opened restaurant. Some of the factors from the data includes theme, menus, cuisine, cost etc for a particular location. Our main goal is to analyze the existing data, convert them into graphs for simplification so that it can help new entrepreneurs to decide how, when and where they should open the restaurant to hit the success on first attempt.
 
-## Introduction
+## I. Introduction
 ### Context
 
 The basic idea of analysing the Zomato dataset is to get a fair idea of the factors affecting the establishment of different types of restaurants in different places in Bengaluru. The market has not yet been saturated with the opening of new restaurants every day and the demand is increasing day by day. Nevertheless, it has become difficult for new restaurants to compete with existing restaurants despite increasing competition.
@@ -43,3 +43,31 @@ https://www.kaggle.com/chirag9073/zomato-restaurants-analysis-and-prediction <br
 
 But most of these work are limited to analysis of the data. We want to go one extra step ahead and wantg to implement 
 recommender system for the user based on the user's needs.
+
+## II. Materials and Methods (400 words): the dataset(s), technologies and algorithms that will be used.
+
+### Dataset : The dataset size is 89 Mbs with 60800 rows. It has total 17 columns but we are not going to focus on all of them. The main columns we have considered are given below.
+
+<b>name :</b> contains the name of the restaurant
+address : contains the address of the restaurant in Bengaluru
+online_order : whether online ordering is available in the restaurant or not
+book_table : table book option available or not
+rate : contains the overall rating of the restaurant out of 5
+votes : contains total number of rating for the restaurant as of the above mentioned date
+rest_type : restaurant type
+cuisines : food styles, separated by comma
+approx_cost(for two people) : contains the approximate cost for meal for two people
+reviews_listlist of tuples :  containing reviews for the restaurant, each tuple consists of two values, rating and review by the customer
+listed_in(city) : contains the neighborhood in which the restaurant is listed
+
+### Technologies
+
+Python, Spark, Panda
+
+### Algorithms
+
+Exploratory Data Analysis (EDA) : is an approach to analyzing data sets to summarize their main characteristics, often with visual methods. A statistical model can be used or not, but primarily EDA is for seeing what the data can tell us beyond the formal modeling or hypothesis testing task.
+
+Long short-term memory (LSTM) : We are going to use LSTM for binary classification of reviews provided by users as negative or positive,means the model predicts whether the review provided by user is negative review or positive.
+
+KNN : In our dataset, there are many restaurants which are not rated. And we certainely can not ignore large number of restaurants. So we are going to use this algorithm to predict the missing value.
