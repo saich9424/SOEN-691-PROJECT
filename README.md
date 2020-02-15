@@ -36,10 +36,10 @@ On top of that we will generate a recommender system based on that.
 
 ### Related work 
 
-There are many data analysis papers on this datataset.
-https://www.kaggle.com/shahules/zomato-complete-eda-and-lstm-model
-https://www.kaggle.com/parthsharma5795/finding-the-best-restaurants-in-bangalore
-https://www.kaggle.com/chirag9073/zomato-restaurants-analysis-and-prediction
+There are many data analysis papers on this datataset. <br />
+https://www.kaggle.com/shahules/zomato-complete-eda-and-lstm-model <br />
+https://www.kaggle.com/parthsharma5795/finding-the-best-restaurants-in-bangalore <br />
+https://www.kaggle.com/chirag9073/zomato-restaurants-analysis-and-prediction <br />
 
 But most of these work are limited to analysis of the data. We want to go one extra step ahead and wantg to implement 
 recommender system for the user based on the user's needs.
