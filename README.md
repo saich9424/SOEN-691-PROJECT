@@ -44,7 +44,7 @@ https://www.kaggle.com/chirag9073/zomato-restaurants-analysis-and-prediction <br
 But most of these work are limited to analysis of the data. We want to go one extra step ahead and wantg to implement 
 recommender system for the user based on the user's needs.
 
-## II. Materials and Methods (400 words): the dataset(s), technologies and algorithms that will be used.
+## II. Materials and Methods : the dataset(s), technologies and algorithms that will be used.
 
 ### Dataset : The dataset size is 89 Mbs with 60800 rows. It has total 17 columns but we are not going to focus on all of them. The main columns we have considered are given below.
 
