@@ -48,17 +48,17 @@ recommender system for the user based on the user's needs.
 
 ### Dataset : The dataset size is 89 Mbs with 60800 rows. It has total 17 columns but we are not going to focus on all of them. The main columns we have considered are given below.
 
-<b>name :</b> contains the name of the restaurant
-address : contains the address of the restaurant in Bengaluru
-online_order : whether online ordering is available in the restaurant or not
-book_table : table book option available or not
-rate : contains the overall rating of the restaurant out of 5
-votes : contains total number of rating for the restaurant as of the above mentioned date
-rest_type : restaurant type
-cuisines : food styles, separated by comma
-approx_cost(for two people) : contains the approximate cost for meal for two people
-reviews_listlist of tuples :  containing reviews for the restaurant, each tuple consists of two values, rating and review by the customer
-listed_in(city) : contains the neighborhood in which the restaurant is listed
+<b>name :</b> contains the name of the restaurant <br />
+<b>address :</b> contains the address of the restaurant in Bengaluru <br />
+<b>online_order :</b> whether online ordering is available in the restaurant or not <br />
+<b>book_table :</b> table book option available or not <br />
+<b>rate :</b> contains the overall rating of the restaurant out of 5 <br />
+<b>votes :</b> contains total number of rating for the restaurant as of the above mentioned date <br />
+<b>rest_type :</b> restaurant type <br />
+<b>cuisines :</b> food styles, separated by comma <br />
+<b>approx_cost(for two people) :</b> contains the approximate cost for meal for two people <br />
+<b>reviews_listlist of tuples :</b>  containing reviews for the restaurant, each tuple consists of two values, rating and review by the customer <br />
+<b>listed_in(city) :</b> contains the neighborhood in which the restaurant is listed <br />
 
 ### Technologies
 
