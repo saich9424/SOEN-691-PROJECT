@@ -54,8 +54,8 @@ The dataset size is 89 Mbs with 60800 rows where each row represents the restaur
 
 This dataset has mainly 2 noise problems
 
-# Empty Rows
-# Irregular Data (In other words, data doesn't reflect the attribute to the full extent)
+<b> Empty Rows </b> <br />
+<b> Irregular Data (In other words, data doesn't reflect the attribute to the full extent) </b> <br />
 
 It has total 17 columns but we are not going to focus on all of them. The main columns we have considered are given below.
 
