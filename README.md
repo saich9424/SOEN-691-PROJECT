@@ -48,9 +48,11 @@ recommender system for the user based on the user's needs.
 
 ### Dataset : 
 
-This dataset is not officially provided by the Data Owner. It is collected using the web scrapper. It is available on Keggle and uploader by the user who has colllected and updated the data over the period of time. 
+This dataset is not officially provided by the Data Owner. It is collected using the web scrapper. It is publicly available on Keggle and uploader by the user who has colllected and updated the data over the period of time. 
 
 The dataset size is 89 Mbs with 60800 rows where each row represents the restaurant entry. Being unofficial dataset, the datset is not cleaned and definitely not ideal. Before transforming the dataset, it needs to be clean properly and needs to be prepared for the next stage. 
+
+This dataset has been collected over two phases. This may be the reason for the noise in the data.
 
 This dataset has mainly 2 noise problems
 
