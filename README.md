@@ -48,7 +48,16 @@ recommender system for the user based on the user's needs.
 
 ### Dataset : 
 
-The dataset size is 89 Mbs with 60800 rows. It has total 17 columns but we are not going to focus on all of them. The main columns we have considered are given below.
+This dataset is not officially provided by the Data Owner. It is collecteed using the web scrapper. It is available on Keggle and uploader by the user who has colllected and updated the data over the period of time. 
+
+The dataset size is 89 Mbs with 60800 rows where each row represents the restaurant entry. Being unoffcial dataset, the datset is not cleaned and definitely not ideal. Before transforming the dataset, it needs to be clean properly and needs to be prepared for the next stage. 
+
+This dataset has mainly 2 noise problems
+
+Empty Rows
+Irregular Data (In other words, data doesn't reflect the attribute to the full extent)
+
+It has total 17 columns but we are not going to focus on all of them. The main columns we have considered are given below.
 
 <b>name :</b> contains the name of the restaurant <br />
 <b>address :</b> contains the address of the restaurant in Bengaluru <br />
