@@ -21,7 +21,7 @@ The basic idea of analysing the dataset is to get a fair idea of the factors aff
 
 ### Objectives
 
-* The main objective of this project is to recommend a restaurant based on ratings and number of votes using two most popular algorithms.
+* The main objective of this project is to recommend a restaurant to a user, based on ratings and number of votes using two most popular algorithms.
 * The second objective is to evaluate the result obtained using Mean Absolute Error (MAE) and Root mean squared error (RMSE) metrics. And then comparing the evaluation results of these algorithms.
 
 ### Presentation of the problem to solve
