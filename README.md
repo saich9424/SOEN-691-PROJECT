@@ -50,28 +50,23 @@ recommender system for the user based on the user's needs.
 
 This dataset is not officially provided by the Data Owner. It is collected using the web scrapper. It is publicly available on Keggle and uploader by the user who has colllected and updated the data over the period of time. 
 
-The dataset size is 89 Mbs with 60800 rows where each row represents the restaurant entry. Being unofficial dataset, the datset is not cleaned and definitely not ideal. Before transforming the dataset, it needs to be clean properly and needs to be prepared for the next stage. 
+The dataset size is 89 Mbs with 60800 rows where each row represents the restaurant reviews by different users. Being unofficial dataset, the datset is not cleaned and definitely not ideal. Before transforming the dataset, it needs to be clean properly and needs to be prepared for the next stage. 
 
 This dataset has been collected over two phases. This may be the reason for the noise in the data.
 
 This dataset has mainly 2 noise problems
 
+* Finding Unique Key <br /> 
 * Empty Rows <br />
 * Irregular Data (In other words, data doesn't reflect the attribute to the full extent) <br />
+* Sacttered Data (Reviews of same restaurants are scattered) <br />
 
 It has total 17 columns but we are not going to focus on all of them. The main columns we have considered are given below.
 
 * <b>name :</b> contains the name of the restaurant <br />
-* <b>address :</b> contains the address of the restaurant in Bengaluru <br />
-* <b>online_order :</b> whether online ordering is available in the restaurant or not <br />
-* <b>book_table :</b> table book option available or not <br />
 * <b>rate :</b> contains the overall rating of the restaurant out of 5 <br />
 * <b>votes :</b> contains total number of rating for the restaurant as of the above mentioned date <br />
-* <b>rest_type :</b> restaurant type <br />
-* <b>cuisines :</b> food styles, separated by comma <br />
 * <b>approx_cost(for two people) :</b> contains the approximate cost for meal for two people <br />
-* <b>reviews_listlist of tuples :</b>  containing reviews for the restaurant, each tuple consists of two values, rating and review by the customer <br />
-* <b>listed_in(city) :</b> contains the neighborhood in which the restaurant is listed <br />
 
 ### Technologies
 
