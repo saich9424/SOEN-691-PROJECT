@@ -61,7 +61,7 @@ It has total 21 columns but we are not going to focus on all of them. The main c
 
 * Sample Data
 
-
+![](Sample_Data.PNG)
 
 ### Technologies
 
