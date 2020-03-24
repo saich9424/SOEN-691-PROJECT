@@ -28,13 +28,13 @@ The basic idea of analysing the dataset is to get a fair idea of the factors aff
 
 Problem : To find a recommedation of a restaurant based on the reviews/preference and location.
 
-Solution: First we will analyse the exisitng data, transform the data. And then we will recommend the restaurant to users based on Content Based recommnedation and Asls recommender. At the end, we will also compare the result of these two recommnder algorithms.
+Solution: First we will analyse the exisitng data, transform the data. And then we will recommend the restaurant to users based on Content Based recommnedation and ALS recommender. At the end, we will also compare the result of these two recommnder algorithms.
 
 ### Related work 
 
 There are many data analysis papers on this datataset. <br />
-https://www.kaggle.com/parthsharma5795/finding-the-best-restaurants-in-bangalore <br />
-https://www.kaggle.com/chirag9073/zomato-restaurants-analysis-and-prediction <br />
+* https://www.kaggle.com/parthsharma5795/finding-the-best-restaurants-in-bangalore <br />
+* https://www.kaggle.com/chirag9073/zomato-restaurants-analysis-and-prediction <br />
 
 But most of these work are limited to analysis of the data. We want to go one extra step ahead and want to implement ALS and Content based recommender system for the user base.
 
@@ -58,6 +58,10 @@ It has total 21 columns but we are not going to focus on all of them. The main c
 * <b>Aggregate rating :</b> Average rating of the restaurant <br />
 * <b>Votes :</b> Number of votes given to particular restaurant <br />
 * <b>Average Cost for two :</b> contains the approximate cost for meal for two people <br />
+
+* Sample Data
+
+
 
 ### Technologies
 
