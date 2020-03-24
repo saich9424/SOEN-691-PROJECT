@@ -2,8 +2,8 @@
 
 ## Team Composition
 
-| Name  | Student id |
-| --- | --- |
+| Name  | Student id | Email Ids |
+| --- | --- | ---|
 | 40087977 | Sai Krishna | saich94@gmail.com |
 | 40083289 | Dhaval Modi | dhavalmodi556@gmail.com |
 | 40082236 | Manushree Mallaraju | NA |
