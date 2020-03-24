@@ -50,7 +50,7 @@ recommender system for the user based on the user's needs.
 
 This dataset is not officially provided by the Data Owner. It is collected using the web scrapper. It is publicly available on Keggle and uploader by the user who has colllected and updated the data over the period of time. 
 
-The dataset size is 89 Mbs with 60800 rows where each row represents the restaurant reviews by different users. Being unofficial dataset, the datset is not cleaned and definitely not ideal. Before transforming the dataset, it needs to be clean properly and needs to be prepared for the next stage. 
+The dataset has 10000 rows where each row represents the restaurant and it's attributes. Though it's unofficial dataset, the datset is  cleaned but definitely not ideal. 
 
 This dataset has been collected over two phases. This may be the reason for the noise in the data.
 
@@ -63,10 +63,12 @@ This dataset has mainly 2 noise problems
 
 It has total 17 columns but we are not going to focus on all of them. The main columns we have considered are given below.
 
-* <b>name :</b> contains the name of the restaurant <br />
-* <b>rate :</b> contains the overall rating of the restaurant out of 5 <br />
-* <b>votes :</b> contains total number of rating for the restaurant as of the above mentioned date <br />
-* <b>approx_cost(for two people) :</b> contains the approximate cost for meal for two people <br />
+* <b>Restaurant Id :</b> Unique Id <br />
+* <b>Restaurant Name :</b> contains the name of the restaurant <br />
+* <b>Country Code :</b> contains thecountry code where it is located <br />
+* <b>Aggregate rating :</b> Average rating of the restaurant <br />
+* <b>Votes :</b> Number of votes given to particular restaurant <br />
+* <b>Average Cost for two :</b> contains the approximate cost for meal for two people <br />
 
 ### Technologies
 
