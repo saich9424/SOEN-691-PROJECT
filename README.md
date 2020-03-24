@@ -17,7 +17,7 @@ In the given dataset we have almost 10000 restaurants scattered across different
 ## I. Introduction
 ### Context
 
-The basic idea of analysing the dataset is to get a fair idea of the factors affecting the establishment of different types of restaurants in different places in Bengaluru. The market has not yet been saturated with the opening of new restaurants every day and the demand is increasing day by day. Nevertheless, it has become difficult for new restaurants to compete with existing restaurants despite increasing competition.
+There are many options avalable to a particular user. But it would be more helpful, if we could get personalized preferences. This user might review the restaurant. ANd adding his/her rating, we can improvise the recommedation for the next user. So, with each increased rating we can make our recommender system more efficient with increasing amount of data. That is exactly our goal, to make best use of the avalable dataset and to make the best matching restaurant to user's need.
 
 ### Objectives
 
@@ -26,9 +26,12 @@ The basic idea of analysing the dataset is to get a fair idea of the factors aff
 
 ### Presentation of the problem to solve
 
-Problem : To find a recommedation of a restaurant based on the reviews/preference and location.
+<b>Problem : </b> To find a recommedation of a restaurant based on the reviews/preference and location.
 
-Solution: First we will analyse the exisitng data, transform the data. And then we will recommend the restaurant to users based on Content Based recommnedation and ALS recommender. At the end, we will also compare the result of these two recommnder algorithms.
+<b>Solution: </b> First we will analyse the exisitng data, transform the data. And then we will recommend the restaurant to users based on Content Based recommnedation and ALS recommender. At the end, we will also compare the result of these two recommnder algorithms.
+
+<b>Problem : </b> Out of these two algorithms, which algorithm performs better.
+<b>Solution: </b> We will evaluate the each algorithms results using RMSE and MEA metrics. Then we can compare these results to find out the best performing algorithm.
 
 ### Related work 
 
@@ -40,7 +43,7 @@ But most of these work are limited to analysis of the data. We want to go one ex
 
 ## II. Materials and Methods : the dataset(s), technologies and algorithms that will be used.
 
-### Dataset : 
+### Dataset
 
 This dataset is not officially provided by the Data Owner. It is collected using the web scrapper. It is publicly available on Keggle and uploader by the user who has colllected and updated the data over the period of time. 
 
