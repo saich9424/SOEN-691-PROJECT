@@ -75,7 +75,7 @@ It has total 17 columns but we are not going to focus on all of them. The main c
 
 ### Technologies
 
-Python, Spark, Panda
+We are going to use Python, Pandas and Matplotlib. We are going to use Python libraries for general computation on data. Pandas will be useful analysing data and also transforming the data at the same time. Using Matplotlib, we will be able to generate graphs for visulization of huge data.
 
 ### Algorithms
 
