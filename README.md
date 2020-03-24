@@ -59,7 +59,7 @@ It has total 21 columns but we are not going to focus on all of them. The main c
 * <b>Votes :</b> Number of votes given to particular restaurant <br />
 * <b>Average Cost for two :</b> contains the approximate cost for meal for two people <br />
 
-## Sample Data
+# Sample Data
 
 ![](Sample_Data.PNG)
 
