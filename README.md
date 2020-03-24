@@ -12,7 +12,7 @@
 Dataset Analysis (Recommender System)
 
 ## Abstract
-We have always been fascinated by the variety of restaurants in Bangalore. And each restaurant offers unique signature dishes. Currently there has been more than 12000 registered restaurants. And many more entrepreneurs are standing just around the corner to fill the night with more bars and restaurants. Keeping the new entrepreneurs in mind, with the available data (Zomato website data), we want to analyze which factor can be added to the success or failure of the newly opened restaurant. Some of the factors from the data includes theme, menus, cuisine, cost etc for a particular location. Our main goal is to analyze the existing data, convert them into graphs for simplification so that it can help new entrepreneurs to decide how, when and where they should open the restaurant to hit the success on first attempt.
+In the given dataset we have almost 10000 restaurants scattered across different metro cities. For a user, who is new to the city, we want to build a <b>recommender system</b> which can give him/her options of various restaurants based on the different parameters. The parameters that we are going to consider are reviews given by others, similar restaurant to his/her personal preference and location. 
 
 ## I. Introduction
 ### Context
@@ -28,21 +28,17 @@ We will also try to find if there is a relation between restaurant type,location
 
 ### Presentation of the problem to solve
 
-Problem : For the new enterprenaurs, it's very essential to get success in the first shot due to high realty cost. 
-They are also confused about locality, cuisine, rates and many more things.
+Problem : To find a recommedation of a restaurant based on the reviews/preference and location.
 
-Solution: First we will analyse the exisitng data, transform the data into graphs for better representation. 
-On top of that we will generate a recommender system based on that.  
+Solution: First we will analyse the exisitng data, transform the data. And then we will recommend the restaurant to users based on Content Based recommnedation and Als recommender. At the end, we will also compare the result of these two recommnder algorithms.
 
 ### Related work 
 
 There are many data analysis papers on this datataset. <br />
-https://www.kaggle.com/shahules/zomato-complete-eda-and-lstm-model <br />
 https://www.kaggle.com/parthsharma5795/finding-the-best-restaurants-in-bangalore <br />
 https://www.kaggle.com/chirag9073/zomato-restaurants-analysis-and-prediction <br />
 
-But most of these work are limited to analysis of the data. We want to go one extra step ahead and wantg to implement 
-recommender system for the user based on the user's needs.
+But most of these work are limited to analysis of the data. We want to go one extra step ahead and want to implement ALS and Content based recommender system for the user base.
 
 ## II. Materials and Methods : the dataset(s), technologies and algorithms that will be used.
 
@@ -50,18 +46,13 @@ recommender system for the user based on the user's needs.
 
 This dataset is not officially provided by the Data Owner. It is collected using the web scrapper. It is publicly available on Keggle and uploader by the user who has colllected and updated the data over the period of time. 
 
-The dataset has 10000 rows where each row represents the restaurant and it's attributes. Though it's unofficial dataset, the datset is  cleaned but definitely not ideal. 
+The dataset has 10000 rows where each row represents the restaurant and it's attributes. Though it's unofficial dataset, the datset is  cleaned but definitely not ideal. This dataset has been collected over two phases. This may be the reason for the noise in the data.
 
-This dataset has been collected over two phases. This may be the reason for the noise in the data.
+This dataset has mainly underlying problems
 
-This dataset has mainly 2 noise problems
+* Sacttered Data <br />
 
-* Finding Unique Key <br /> 
-* Empty Rows <br />
-* Irregular Data (In other words, data doesn't reflect the attribute to the full extent) <br />
-* Sacttered Data (Reviews of same restaurants are scattered) <br />
-
-It has total 17 columns but we are not going to focus on all of them. The main columns we have considered are given below.
+It has total 21 columns but we are not going to focus on all of them. The main columns we have considered are given below.
 
 * <b>Restaurant Id :</b> Unique Id <br />
 * <b>Restaurant Name :</b> contains the name of the restaurant <br />
