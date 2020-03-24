@@ -12,25 +12,23 @@
 Dataset Analysis (Recommender System)
 
 ## Abstract
-In the given dataset we have almost 10000 restaurants scattered across different metro cities. For a user, who is new to the city, we want to build a <b>recommender system</b> which can give him/her options of various restaurants based on the different parameters. The parameters that we are going to consider are reviews given by others, similar restaurant to his/her personal preference and location. 
+In the given dataset we have almost 10000 restaurants scattered across different metro cities. It is obviously difficult to find the best restaurant in the city. So for a user, who is new to the city, we want to build a <b>recommender system</b> which can give him/her options of various restaurants based on the different parameters. The parameters that we are going to consider are reviews given by others, similar restaurant to his/her personal preference and location. The recommender systems will be content based as well as colloberative filtering based.
 
 ## I. Introduction
 ### Context
 
-The basic idea of analysing the Zomato dataset is to get a fair idea of the factors affecting the establishment of different types of restaurants in different places in Bengaluru. The market has not yet been saturated with the opening of new restaurants every day and the demand is increasing day by day. Nevertheless, it has become difficult for new restaurants to compete with existing restaurants despite increasing competition.
+The basic idea of analysing the dataset is to get a fair idea of the factors affecting the establishment of different types of restaurants in different places in Bengaluru. The market has not yet been saturated with the opening of new restaurants every day and the demand is increasing day by day. Nevertheless, it has become difficult for new restaurants to compete with existing restaurants despite increasing competition.
 
 ### Objectives
 
-The objectives is to answer questions regarding the restaurants based on the different chosen parameters. 
-The other objective is to help the new enterauprenaurs help deciding different paramteers to consider before opening the new restaurants and also to determine the probability of the success of the restaurants.
-Recommend the restaurantbased on user's needs.
-We will also try to find if there is a relation between restaurant type,location and the cost?
+* The main objective of this project is to recommend a restaurant based on ratings and number of votes using two most popular algorithms.
+* The second objective is to evaluate the result obtained using Mean Absolute Error (MAE) and Root mean squared error (RMSE) metrics. And then comparing the evaluation results of these algorithms.
 
 ### Presentation of the problem to solve
 
 Problem : To find a recommedation of a restaurant based on the reviews/preference and location.
 
-Solution: First we will analyse the exisitng data, transform the data. And then we will recommend the restaurant to users based on Content Based recommnedation and Als recommender. At the end, we will also compare the result of these two recommnder algorithms.
+Solution: First we will analyse the exisitng data, transform the data. And then we will recommend the restaurant to users based on Content Based recommnedation and Asls recommender. At the end, we will also compare the result of these two recommnder algorithms.
 
 ### Related work 
 
