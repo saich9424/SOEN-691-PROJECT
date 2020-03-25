@@ -82,5 +82,5 @@ We are going to use Python, Pandas and Matplotlib. We are going to use Python li
 
 ### Metrics
 
-<b>Mean Absolute Error (MAE) :</b> This metric will be used to average over the test sample of the absolute differences between prediction and actual observation where all individual differences have equal weight.
+<b>Mean Absolute Error (MAE) :</b> This metric will be used to average over the test sample of the absolute differences between prediction and actual observation where all individual differences have equal weight. <br />
 <b>Root mean squared error (RMSE) :</b> We will use this metric to measure of the differences between sample values and predicted by a recommender model.
