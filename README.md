@@ -65,11 +65,17 @@ This dataset has mainly underlying problems
 It has total 21 columns but we are not going to focus on all of them. The main columns we have considered are given below.
 
 * <b>Restaurant Id :</b> Unique Id <br />
+&nbsp;   &nbsp;   &nbsp; We have chosen this column to uniquly identify restaurant.
 * <b>Restaurant Name :</b> contains the name of the restaurant <br />
+&nbsp;   &nbsp;   &nbsp; We have chosen this column to print result along with restaurant names.
 * <b>Cuisenes :</b> contains the variety of cusiens. <br />
+&nbsp;   &nbsp;   &nbsp; We have chosen this column if the user want to filter based on cuisenes.
 * <b>Aggregate rating :</b> Average rating of the restaurant <br />
+&nbsp;   &nbsp;   &nbsp; We have chosen this column to use these rating for content based filtering.
 * <b>Votes :</b> Number of votes given to particular restaurant <br />
+&nbsp;   &nbsp;   &nbsp; We have chosen this column to put thresold for minimum nuber of votes.
 * <b>Average Cost for two :</b> contains the approximate cost for meal for two people <br />
+&nbsp;   &nbsp;   &nbsp; We have chosen this column if the user want to filter based on cost.
 
 ### Sample Data
 
