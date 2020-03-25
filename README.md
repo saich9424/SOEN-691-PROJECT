@@ -79,3 +79,8 @@ We are going to use Python, Pandas and Matplotlib. We are going to use Python li
 <b>KNN (k-nearest neighbors) :</b> In our dataset, there are many restaurants which are not rated. And we certainely can not ignore large number of restaurants. So we are going to use this algorithm to predict the missing value.
 
 <b>ALS (Alternating Least Squares) :</b> After analysing the data, we are going to generate the recommender system which can recommend used the restaurants based on the parameters.
+
+### Metrics
+
+<b>Mean Absolute Error (MAE) :</b> This metric will be used to average over the test sample of the absolute differences between prediction and actual observation where all individual differences have equal weight.
+<b>Root mean squared error (RMSE) :</b> We will use this metric to measure of the differences between sample values and predicted by a recommender model.
