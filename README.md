@@ -41,7 +41,7 @@ There are many data analysis papers on this datataset. <br />
 
 But most of these work are limited to analysis of the data. We want to go one extra step ahead and want to implement ALS and Content based recommender system for the user base.
 
-## II. Materials and Methods : the dataset(s), technologies and algorithms that will be used.
+## II. Materials and Methods
 
 ### Dataset
 
