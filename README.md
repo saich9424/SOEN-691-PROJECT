@@ -63,7 +63,7 @@ It has total 21 columns but we are not going to focus on all of them. The main c
 * <b>Votes :</b> Number of votes given to particular restaurant <br />
 * <b>Average Cost for two :</b> contains the approximate cost for meal for two people <br />
 
-#### Sample Data
+### Sample Data
 
 ![](Sample_Data.PNG)
 
@@ -73,16 +73,16 @@ We are going to use Python, Pandas and Matplotlib. We are going to use Python li
 
 ### Algorithms
 
-<b>Exploratory Data Analysis (EDA) :</b> is an approach to analyzing data sets to summarize their main characteristics, often with visual methods. A statistical model can be used or not, but primarily EDA is for seeing what the data can tell us beyond the formal modeling or hypothesis testing task.
+* <b>Exploratory Data Analysis (EDA) :</b> is an approach to analyzing data sets to summarize their main characteristics, often with visual methods. A statistical model can be used or not, but primarily EDA is for seeing what the data can tell us beyond the formal modeling or hypothesis testing task.
 
-<b>Long short-term memory (LSTM) :</b> We are going to use LSTM for binary classification of reviews provided by users as negative or positive,means the model predicts whether the review provided by user is negative review or positive.
+* <b>Long short-term memory (LSTM) :</b> We are going to use LSTM for binary classification of reviews provided by users as negative or positive,means the model predicts whether the review provided by user is negative review or positive.
 
-<b>KNN (k-nearest neighbors) :</b> In our dataset, there are many restaurants which are not rated. And we certainely can not ignore large number of restaurants. So we are going to use this algorithm to predict the missing value.
+* <b>KNN (k-nearest neighbors) :</b> In our dataset, there are many restaurants which are not rated. And we certainely can not ignore large number of restaurants. So we are going to use this algorithm to predict the missing value.
 
-<b>ALS (Alternating Least Squares) :</b> After analysing the data, we are going to generate the recommender system which can recommend used the restaurants based on the parameters.
+* <b>ALS (Alternating Least Squares) :</b> After analysing the data, we are going to generate the recommender system which can recommend used the restaurants based on the parameters.
 
 ### Metrics
 
-<b>Mean Absolute Error (MAE) :</b> This metric will be used to average over the test sample of the absolute differences between prediction and actual observation where all individual differences have equal weight. <br />
+* <b>Mean Absolute Error (MAE) :</b> This metric will be used to average over the test sample of the absolute differences between prediction and actual observation where all individual differences have equal weight. <br />
 
-<b>Root mean squared error (RMSE) :</b> We will use this metric to measure of the differences between sample values and predicted by a recommender model.
+* <b>Root mean squared error (RMSE) :</b> We will use this metric to measure of the differences between sample values and predicted by a recommender model.
