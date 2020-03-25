@@ -26,12 +26,13 @@ There are many options avalable to a particular user. But it would be more helpf
 
 ### Presentation of the problem to solve
 
-<b>Problem : </b> To find a recommedation of a restaurant based on the reviews/preference and location.
+* <b>Problem : </b> To find a recommedation of a restaurant based on the reviews/preference and location.
 
-<b>Solution: </b> First we will analyse the exisitng data, transform the data. And then we will recommend the restaurant to users based on Content Based recommnedation and ALS recommender. At the end, we will also compare the result of these two recommnder algorithms.
+- <b>Solution: </b> First we will analyse the exisitng data, transform the data. And then we will recommend the restaurant to users based on Content Based recommnedation and ALS recommender. At the end, we will also compare the result of these two recommnder algorithms.
 
-<b>Problem : </b> Out of these two algorithms, which algorithm performs better.
-<b>Solution: </b> We will evaluate the each algorithms results using RMSE and MEA metrics. Then we can compare these results to find out the best performing algorithm.
+* <b>Problem : </b> Out of these two algorithms, which algorithm performs better.
+ 
+- <b>Solution: </b> We will evaluate the each algorithms results using RMSE and MEA metrics. Then we can compare these results to find out the best performing algorithm.
 
 ### Related work 
 
