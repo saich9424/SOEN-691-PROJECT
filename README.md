@@ -71,7 +71,7 @@ It has total 21 columns but we are not going to focus on all of them. The main c
 * <b>Cuisenes :</b> contains the variety of cusiens. <br />
 &nbsp;   &nbsp;   &nbsp; We have chosen this column if the user want to filter based on cuisenes.
 * <b>Aggregate rating :</b> average rating of the restaurant <br />
-&nbsp;   &nbsp;   &nbsp; we have chosen this column to use these rating for content based filtering.
+&nbsp;   &nbsp;   &nbsp; We have chosen this column to use these rating for content based filtering.
 * <b>Votes :</b> number of votes given to particular restaurant <br />
 &nbsp;   &nbsp;   &nbsp; We have chosen this column to put thresold for minimum nuber of votes.
 * <b>Average Cost for two :</b> contains the approximate cost for meal for two people <br />
