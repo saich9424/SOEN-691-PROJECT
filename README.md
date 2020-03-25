@@ -48,7 +48,7 @@ But most of these work are limited to analysis of the data. We want to go one ex
 
 This dataset is not officially provided by the Data Owner. It is collected using the web scrapper. It is publicly available on Keggle and uploader by the user who has colllected and updated the data over the period of time. 
 
-The dataset has 10000 rows where each row represents the restaurant and it's attributes. Though it's unofficial dataset, the datset is  cleaned but definitely not ideal. This dataset has been collected over two phases. This may be the reason for the noise in the data.
+The dataset has 10000 rows where each row represents the restaurant and it's attributes. Though it's unofficial dataset, the datset is  cleaned but definitely not ideal as seen below mentioned problems.
 
 This dataset has mainly underlying problems
 
