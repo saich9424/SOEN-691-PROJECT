@@ -66,7 +66,7 @@ It has total 21 columns but we are not going to focus on all of them. The main c
 
 * <b>Restaurant Id :</b> Unique Id <br />
 * <b>Restaurant Name :</b> contains the name of the restaurant <br />
-* <b>Country Code :</b> contains thecountry code where it is located <br />
+* <b>Cuisenes :</b> contains the variety of cusiens. <br />
 * <b>Aggregate rating :</b> Average rating of the restaurant <br />
 * <b>Votes :</b> Number of votes given to particular restaurant <br />
 * <b>Average Cost for two :</b> contains the approximate cost for meal for two people <br />
