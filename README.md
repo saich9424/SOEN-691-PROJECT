@@ -17,7 +17,7 @@ In the given dataset we have almost 10000 restaurants scattered across different
 ## I. Introduction
 ### Context
 
-There are many options avalable to a particular user. But it would be more helpful, if we could get personalized preferences. This user might review the restaurant. ANd adding his/her rating, we can improvise the recommedation for the next user. So, with each increased rating we can make our recommender system more efficient with increasing amount of data. That is exactly our goal, to make best use of the avalable dataset and to make the best matching restaurant to user's need.
+There are many options available to a particular user. But it would be more helpful, if we could get personalized preferences. This user might review the restaurant. And adding his/her rating, we can improvise the recommedation for the next user. So, with each increased rating we can make our recommender system more efficient with increasing amount of data. That is exactly our goal, to make best use of the avalable dataset and to make the best matching restaurant to user's need.
 
 ### Objectives
 
