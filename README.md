@@ -52,8 +52,13 @@ The dataset has 10000 rows where each row represents the restaurant and it's att
 
 This dataset has mainly underlying problems
 
-* Sacttered Data :<br /> In the dataset we have many mtero cities. Apart from 3 metro cities all other cities have more or less almost equally number of restaurants. In other words we have many scattered clusters with each have almost same number of dataset.
+* Scattered Data :<br /> In the dataset we have many mtero cities. Apart from 3 metro cities all other cities have more or less almost equally number of restaurants. In other words we have many scattered clusters with each have almost same number of dataset.
+
+![](Scattered_Data.PNG)
+
 * Imblanced Data :<br /> For 3 cities have most number of the restaurants, so it can have major effect on the result.
+
+![](Imblanced_Data.PNG)
 
 It has total 21 columns but we are not going to focus on all of them. The main columns we have considered are given below.
 
