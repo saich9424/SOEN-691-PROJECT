@@ -12,7 +12,7 @@
 Dataset Analysis (Recommender System)
 
 ## Abstract
-In the given dataset we have almost 10000 restaurants scattered across different metro cities. It is obviously difficult to find the best restaurant in the city. So for a user, who is new to the city, we want to build a <b>recommender system</b> which can give him/her options of various restaurants based on the different parameters. The parameters that we are going to consider are reviews given by others, similar restaurant to his/her personal preference and location. We will implement two recommender systems, which will be content based and colloberative filtering based.
+In the given dataset we have almost 10000 restaurants scattered across different metro cities. It is obviously difficult to find the best restaurant in the city. So for a user, who is new to the city, we want to build a recommender system which can give him/her options of various restaurants based on the different parameters. The parameters that we are going to consider are reviews given by others, similar restaurant to his/her personal preference and location. We will implement two recommender systems, which will be content based and colloberative filtering based.
 
 ## I. Introduction
 ### Context
@@ -22,7 +22,7 @@ There are many options avalable to a particular user. But it would be more helpf
 ### Objectives
 
 * The main objective of this project is to recommend a restaurant to a user, based on ratings and number of votes using two most popular algorithms.
-* The second objective is to evaluate the result obtained using Mean Absolute Error (MAE) and Root mean squared error (RMSE) metrics. And then comparing the evaluation results of these algorithms.
+* The second objective is to evaluate the result obtained using Root mean squared error (RMSE) metric. And then comparing the evaluation results of these algorithms.
 
 ### Presentation of the problem to solve
 
@@ -32,7 +32,7 @@ There are many options avalable to a particular user. But it would be more helpf
 
 * <b>Problem : </b> Out of these two algorithms, which algorithm performs better.
  
-  <b>Solution: </b> We will evaluate the each algorithms results using RMSE and MEA metrics. Then we can compare these results to find out the best performing algorithm.
+  <b>Solution: </b> We will evaluate the each algorithms results using RMSE metric. Then we can compare these results to find out the best performing algorithm.
 
 ### Related work 
 
@@ -73,14 +73,10 @@ We are going to use Python, Pandas and Matplotlib. We are going to use Python li
 
 ### Algorithms
 
-* <b>Exploratory Data Analysis (EDA) :</b> is an approach to analyzing data sets to summarize their main characteristics, often with visual methods. A statistical model can be used or not, but primarily EDA is for seeing what the data can tell us beyond the formal modeling or hypothesis testing task.
-
 * <b>Content-based filtering :</b> In this algorithm, we will use item metadata, such as Locality, Cuisine, rating, etc. for restaurants, to make these recommendations. Here, we are solely relied on item data rather than other user's  metadata.
 
 * <b>Alternating Least Squares (ALS) :</b>  Using this algorithm, we will try to predict the rating or preference that a user would give an item-based on past ratings and preferences of other users. In this technique, we will not use item metadata unlike content-based filtering algorithm.
 
 ### Metrics
-
-* <b>Mean Absolute Error (MAE) :</b> This metric will be used to average over the test sample of the absolute differences between prediction and actual observation where all individual differences have equal weight. <br />
 
 * <b>Root mean squared error (RMSE) :</b> We will use this metric to measure of the differences between sample values and predicted by a recommender model.
