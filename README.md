@@ -40,7 +40,7 @@ There are many data analysis papers on this datataset. <br />
 * https://www.kaggle.com/parthsharma5795/finding-the-best-restaurants-in-bangalore <br />
 * https://www.kaggle.com/chirag9073/zomato-restaurants-analysis-and-prediction <br />
 
-These two studies can be taken into consideration into initial stages of data preparation. For ex. Data Loading and Cleaning. However, these work are limited to analysis of the data. We want to go one further step ahead and want to implement ALS and Content based recommender system for the user base.
+These two studies can be taken into consideration into initial stages of data preparation. For ex. Data Loading and Cleaning. However, these work are limited to analysis of the data. We want to go one step further and want to implement ALS and Content based recommender system for the user base.
 
 ## II. Materials and Methods
 
