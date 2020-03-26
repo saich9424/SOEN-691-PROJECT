@@ -40,7 +40,7 @@ There are many data analysis papers on this datataset. <br />
 * https://www.kaggle.com/parthsharma5795/finding-the-best-restaurants-in-bangalore <br />
 * https://www.kaggle.com/chirag9073/zomato-restaurants-analysis-and-prediction <br />
 
-But most of these work are limited to analysis of the data. We want to go one extra step ahead and want to implement ALS and Content based recommender system for the user base.
+These two studies can be taken into consideration into initial stages of data preparation. For ex. Data Loading and Cleaning. However, these work are limited to analysis of the data. We want to go one further step ahead and want to implement ALS and Content based recommender system for the user base.
 
 ## II. Materials and Methods
 
@@ -94,3 +94,7 @@ We are going to use Python, Pandas and Matplotlib. We are going to use Python li
 ### Metrics
 
 * <b>Root mean squared error (RMSE) :</b> We will use this metric to measure of the differences between sample values and predicted by a recommender model.
+
+### References
+
+
