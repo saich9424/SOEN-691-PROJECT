@@ -46,7 +46,7 @@ These two studies can be taken into consideration into initial stages of data pr
 
 ### Dataset
 
-This dataset is not officially provided by the Data Owner. It is collected using the web scrapper. It is publicly available on Keggle and uploader by the user who has colllected and updated the data over the period of time. 
+This dataset is not officially provided by the Data Owner. It is collected using the web scrapper. It is publicly available and uploaded by the user who has colllected and updated the data over the period of time. 
 
 The dataset has 10000 rows where each row represents the restaurant and it's attributes. Though it's unofficial dataset, the datset is  cleaned but definitely not ideal as seen below mentioned problems.
 
