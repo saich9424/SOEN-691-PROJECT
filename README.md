@@ -50,18 +50,6 @@ This dataset is not officially provided by the Data Owner. It is collected using
 
 The dataset has 10000 rows where each row represents the restaurant and it's attributes. Though it's unofficial dataset, the datset is  cleaned but definitely not ideal as seen below mentioned problems.
 
-This dataset has mainly underlying problems
-
-* Scattered Data :<br /> In the dataset we have many mtero cities. Apart from 3 metro cities all other cities have more or less almost equally number of restaurants. In other words we have many scattered clusters with each have almost same number of dataset.
-
-&nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp; <img src="https://github.com/saich9424/SOEN-691-PROJECT/blob/master/images/Scattered_Data.PNG" width="200">
-
-
-* Imbalanced Data :<br /> For 3 cities have most number of the restaurants, so it can have major effect on the result.
-
-&nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp; <img src="https://github.com/saich9424/SOEN-691-PROJECT/blob/master/images/Imbalanced_Data.PNG" width="200">
-
-
 It has total 21 columns but we are not going to focus on all of them. The main columns we have considered are given below.
 
 * <b>Restaurant Id :</b> unique Id <br />
@@ -79,7 +67,8 @@ It has total 21 columns but we are not going to focus on all of them. The main c
 
 ### Sample Data
 
-![](images/Sample_Data.PNG)
+![](images/Sample_Data_Restaurant.PNG)
+![](images/Sample_Data_Reviews.PNG)
 
 ### Technologies
 
