@@ -46,31 +46,33 @@ These two studies can be taken into consideration into initial stages of data pr
 
 ### Dataset
 
-This dataset is not officially provided by the Data Owner. It is collected using the web scrapper. It is publicly available and uploaded by the user who has colllected and updated the data over the period of time. 
+This dataset is not officially provided by the Data Owner. It is collected using the APIs. It is publicly available and uploaded by the user who has colllected and updated the data over the period of time. 
 
-The dataset has 10000 rows where each row represents the restaurant and it's attributes. Though it's unofficial dataset, the datset is  cleaned but definitely not ideal as seen below mentioned problems.
+The dataset consists of two csv files. One csv file containes all the different restaurant and it's attributes. There are more than 40k restaurants, . The other file contains the review provided by different user to different restaurants. The rating scale is [1, 5]. It has more than 1000k rows where each row represents the restaurant and it's attributes. Looking at the the number of restaurants and reviews, we think it is enough to be considered for big data. 
 
-It has total 21 columns but we are not going to focus on all of them. The main columns we have considered are given below.
+Though it's unofficial dataset, the datset uniform but definitely not ideal. In other words, there are many attributes which definitely not going to help in calculating recommandation. So before that we need to transform the data into desired dataset.
 
-* <b>Restaurant Id :</b> unique Id <br />
+The main columns we have considered are given below.
+
+* <b>business_id :</b> unique Id for restaurant <br />
 &nbsp;   &nbsp;   &nbsp; We have chosen this column to uniquly identify restaurant.
-* <b>Restaurant Name :</b> contains the name of the restaurant <br />
-&nbsp;   &nbsp;   &nbsp; We have chosen this column to print result along with restaurant names.
-* <b>Cuisenes :</b> contains the variety of cusiens. <br />
-&nbsp;   &nbsp;   &nbsp; We have chosen this column if the user want to filter based on cuisenes.
-* <b>Aggregate rating :</b> average rating of the restaurant <br />
+* <b>user_id :</b> unique Id for user profile <br />
+&nbsp;   &nbsp;   &nbsp; We have chosen this column to uniquly identify users.
+* <b>city :</b> where restaurant resides. <br />
+&nbsp;   &nbsp;   &nbsp; We have chosen this column if the user want to filter based on city.
+* <b>stars :</b> average rating of the restaurant <br />
 &nbsp;   &nbsp;   &nbsp; We have chosen this column to use these rating for content based filtering.
-* <b>Votes :</b> number of votes given to particular restaurant <br />
+* <b>votes :</b> number of votes given to particular restaurant <br />
 &nbsp;   &nbsp;   &nbsp; We have chosen this column to put thresold for minimum number of votes.
-* <b>Average Cost for two :</b> contains the approximate cost for meal for two people <br />
-&nbsp;   &nbsp;   &nbsp; We have chosen this column if the user want to filter based on cost.
 
 ### Sample Data
 
 * Restaurants
+
 ![](images/Sample_Data_Restaurant.PNG)
 
 * Reviews
+
 ![](images/Sample_Data_Reviews.PNG)
 
 ### Technologies
