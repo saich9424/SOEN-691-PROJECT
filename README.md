@@ -67,7 +67,10 @@ It has total 21 columns but we are not going to focus on all of them. The main c
 
 ### Sample Data
 
+* Restaurants
 ![](images/Sample_Data_Restaurant.PNG)
+
+* Reviews
 ![](images/Sample_Data_Reviews.PNG)
 
 ### Technologies
