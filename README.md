@@ -48,7 +48,7 @@ These two studies can be taken into consideration into initial stages of data pr
 
 This dataset is not officially provided by the Data Owner. It is collected using the APIs. It is publicly available and uploaded by the user who has colllected and updated the data over the period of time. 
 
-The dataset consists of two csv files. One csv file containes all the different restaurant and it's attributes. There are more than 40k restaurants, . The other file contains the review provided by different user to different restaurants. The rating scale is [1, 5]. It has more than 1000k rows where each row represents the restaurant and it's attributes. Looking at the the number of restaurants and reviews, we think it is enough to be considered for big data. 
+The dataset consists of two csv files. One csv file containes all the different restaurant and it's attributes. There are more than 40k restaurants. The other file contains the review provided by different user to different restaurants. The rating scale is [1, 5]. It has more than 1000k rows where each row represents the review and rating given by the user. Looking at the the number of restaurants and reviews, we think it is enough to be considered for big data. 
 
 Though it's unofficial dataset, the datset uniform but definitely not ideal. In other words, there are many attributes which definitely not going to help in calculating recommandation. So before that we need to transform the data into desired dataset.
 
