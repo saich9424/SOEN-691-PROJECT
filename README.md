@@ -62,7 +62,7 @@ The main columns we have considered are given below.
 &nbsp;   &nbsp;   &nbsp; We have chosen this column if the user want to filter based on city.
 * <b>stars :</b> average rating of the restaurant <br />
 &nbsp;   &nbsp;   &nbsp; We have chosen this column to use these rating for content based filtering.
-* <b>votes :</b> number of votes given to particular restaurant <br />
+* <b>review_count :</b> number of votes given to particular restaurant <br />
 &nbsp;   &nbsp;   &nbsp; We have chosen this column to put thresold for minimum number of votes.
 
 ### Sample Data
