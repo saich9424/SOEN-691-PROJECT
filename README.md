@@ -67,11 +67,11 @@ The main columns we have considered are given below.
 
 ### Sample Data
 
-* <b>Restaurants<\ b>
+* <b>Restaurants </b>
 
 ![](images/Sample_Data_Restaurant.PNG)
 
-* <b>Reviews<\ b>
+* <b>Reviews </b>
 
 ![](images/Sample_Data_Reviews.PNG)
 
