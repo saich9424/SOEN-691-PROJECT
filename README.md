@@ -77,7 +77,7 @@ The main columns we have considered are given below.
 
 ### Technologies
 
-We are going to use Python, Pandas and Matplotlib. We are going to use Python libraries for general computation on data. Pandas will be useful analysing data and also transforming the data at the same time. Using Matplotlib, we will be able to generate graphs for visulization of huge data.
+We are going to use Python, Pandas, Spark and Matplotlib. We are going to use Python libraries for general computation on data. Pandas & Spark will be useful analysing data and also transforming the data at the same time. Using Matplotlib, we will be able to generate graphs for visulization of huge data.
 
 ### Algorithms
 
