@@ -144,6 +144,7 @@ We are going to use Python, Pandas, Spark and Matplotlib. We are going to use Py
             predictions = predictions.rdd.map(lambda x: prediction_method(x)).toDF()
             predictions.show(5)
            ```
+           <br/>
 
 * <b>Alternating Least Squares (ALS) :</b>  Using this algorithm, we will try to predict the rating or preference that a user would give an item-based on past ratings and preferences of other users. In this technique, we will not use item metadata unlike content-based filtering algorithm.
 
