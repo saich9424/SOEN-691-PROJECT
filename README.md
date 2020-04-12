@@ -110,11 +110,38 @@ We are going to use Python, Pandas, Spark and Matplotlib. We are going to use Py
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ` idf_dict[i] = math.log10(restaurant_count / (df_dict['sum(' + i + ')'])) `<br>
 
    * <b> Prediction : </b> First we have calculated the cosine similarity between User vector and Restaurant vector. After finding the cosine similarity we have used below given formula to calculate the user prediction.
-    <p align="center"><img src="https://github.com/saich9424/SOEN-691-PROJECT/blob/master/images/Cosine.PNG" width="600"></p>
+      <p align="center"><img src="https://github.com/saich9424/SOEN-691-PROJECT/blob/master/images/Cosine.PNG" width="600"></p>
 
-    <p align="center"><img src="https://github.com/saich9424/SOEN-691-PROJECT/blob/master/images/Prediction.png" width="600"></p>
+      <p align="center"><img src="https://github.com/saich9424/SOEN-691-PROJECT/blob/master/images/Prediction.png" width="600"></p>
 
-  
+        * <b> Implementation : </b> Code implemetation of this is given below.
+ 
+           ```ruby
+            test_data = test_data.join(updated_ratings_df, 'user_index')
+            predictions = test_data.join(norm, 'restaurant_index')
+            predictions.show(5)
+
+            def prediction_method(x):
+                dict1 = x.asDict()
+                score1, score2, ans = 0, 0, 0
+
+                for c in categories_set:
+                    a = dict1[c]
+                    b = dict1['sum(' + c + ')']
+                    score1 = score1 + (a ** 2)
+                    score2 = score2 + (b ** 2)
+                    ans = ans + (a * b)
+
+                ans = ans / (math.sqrt(score1) * math.sqrt(score2))
+                ans = 1 + 2 * (ans + 1)
+                output = {'user_index': dict1.pop('restaurant_index'), 'restaurant_index': dict1.pop('user_index'), 'user_rating': dict1.pop('user_rating'),
+                          'prediction': ans}
+                return Row(**output)
+
+
+            predictions = predictions.rdd.map(lambda x: prediction_method(x)).toDF()
+            predictions.show(5)
+           ```
 
 * <b>Alternating Least Squares (ALS) :</b>  Using this algorithm, we will try to predict the rating or preference that a user would give an item-based on past ratings and preferences of other users. In this technique, we will not use item metadata unlike content-based filtering algorithm.
 
