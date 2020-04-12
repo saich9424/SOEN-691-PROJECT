@@ -100,7 +100,11 @@ We are going to use Python, Pandas, Spark and Matplotlib. We are going to use Py
 
 * <b>Content Based Recommended Restaurants </b>
 
-![](images/Reviews.png)
+![](images/Content_Based_Restaurants.png)
+
+* <b>ALS Recommended Restaurants </b>
+
+![](images/Content_Based_Restaurants.png)
 
 ### Conclusion
 
