@@ -98,6 +98,10 @@ We are going to use Python, Pandas, Spark and Matplotlib. We are going to use Py
 ## III. Results & Future Work
 ### Results
 
+* <b>Content Based Recommended Restaurants </b>
+
+![](images/Reviews.png)
+
 ### Conclusion
 
 * The RMSE of content based is higher than the collaborative.
