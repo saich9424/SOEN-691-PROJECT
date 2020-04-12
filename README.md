@@ -162,6 +162,8 @@ The Zomato API provides exhaustive information about each food joint by differen
 * Content based recommended the restaurants that have high review count whereas collaborative recommendations tend to have higher ratings and lower review count.
 * Collaborative Filtering algorithm has the limitations of Cold-start problem where a recommender does not have the adequate information about a user or an item to make relevant predictions. Data Sparsity Is the problem that occurs as a result of lack of enough information.
 
+## IV. Limitations & Future Work
+
 ### Limitations
 
 * As API gives the large data around 400 gb, it is difficult to extract and process.
@@ -172,7 +174,7 @@ The Zomato API provides exhaustive information about each food joint by differen
 * Going ahead, we can build Hybrid recommender systems. The best approach would be to use a combination of different approaches. Mix of collaborative and content-based filtering. Some of it will depend on preferences of the users and some on item features.
 * We can implement recommender systems with various algorithms such as SVD++,Bayesian Personalized Ranking (BPR) and deep learning algorithms.
 
-## IV. References
+## V. References
 
 * Content-Based Recommendation System. Description and implementation with Python. https://medium.com/towards-artificial-intelligence/content-based-recommender-system-4db1b3de03e7
 * Recommendation System, collaborative recommender systems & content-based recommender systems,  http://snap.stanford.edu/class/cs246-2012/slides/07-recsys1.pdf
