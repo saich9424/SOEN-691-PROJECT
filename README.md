@@ -143,22 +143,37 @@ The Zomato API provides exhaustive information about each food joint by differen
 *  Data after joining restaurants and review files for collaborative filtering
 
   <p align="center"><img src="https://github.com/saich9424/SOEN-691-PROJECT/blob/master/images/after%20filtering.png" width="500"></p>
+  <p align="center"><img src="https://github.com/saich9424/SOEN-691-PROJECT/blob/master/images/distribution_cate.png" width="500"></p>
+
       
 ### Technology Implementation
 * <b>Content-based filtering :</b>
 
-* <b>Collaborative filtering :</b>
+* <b>Collaborative filtering :</b> We have used ALS with bias and the forumla for it is 
+  user_item interaction+user_mean+item_mean global rating
   * <b>Steps in ALS:  </b>
-  - User restaurant review data is collected ,Parse the data into the input format for the ALS algorithm and built user-restaurant interaction model  
-  - Split data into train and test
-  - ALS model selection and evaluation a user product matrix model.
-  - Calculate rmse
-  - Model outputs top N restaurant recommendations for that user based on the ranking of restaurant rating predictions
+    - User restaurant review data is collected ,Parse the data into the input format for the ALS algorithm and built user-restaurant           interaction model  
+    - Split data into train and test
+    - ALS model selection and evaluation a user product matrix model.
+    - Calculate rmse
+    - Model outputs top N restaurant recommendations for that user based on the ranking of restaurant rating predictions
 
   * <b>ALS Hyperparams:  </b> These are the optimized values
-  - maxIter: (10) - the maximum number of iterations to run 
-  - rank: (70) - the number of latent factors in the model (defaults to 10)
-  - regParam: the regularization parameter in ALS (defaults to 1.0)
+    - maxIter: (10) - the maximum number of iterations to run .
+    - rank: (70) - the number of latent factors in the model.
+    - regParam: (0.02) the regularization parameter in ALS .
+    - Traing to Test ratio: 70:30
+    
+  The hyperparameters are chosen based on tuning of the values to get the desired rmse
+  ```ruby
+  als = ALS (maxIter=10, regParam=0.02, rank=70, userCol="userId", itemCol="restId", ratingCol="rating",
+               coldStartStrategy="drop", seed=seed)
+  ```
+  <p align="center"><img src="https://github.com/saich9424/SOEN-691-PROJECT/blob/master/images/range.png" width="500"></p>
+  
+  ### Technology Comparison
+
+
 
 ### Recommended Restaurants
 
