@@ -90,13 +90,11 @@ The Zomato API provides exhaustive information about each food joint by differen
 * <b>  Programming language: </b> Python
 
 
-We are going to use Python, Pandas, Spark and Matplotlib. We are going to use Python libraries for general computation on data. Pandas & Spark will be useful analysing data and also transforming the data at the same time. Using Matplotlib, we will be able to generate graphs for visulization of huge data.
-
 ### Algorithms
 
-* <b>Content-based filtering :</b> We have implemeted below given alorithms for Content-based filtering. Below given In this algorithm, we will use item metadata, such as Locality, Cuisine, rating, etc. for restaurants, to make these recommendations. Here, we are solely relied on item data rather than other user's  metadata.
+* <b>Content-based filtering :</b> We have implemented the below-given algorithm for Content-based filtering. In this algorithm, we will use item metadata, such as Locality, Cuisine, rating, etc. for restaurants, to make these recommendations. Here, we have solely relied on item data rather than other user's metadata.
 
-  * <b> TF * IDF algorithm : </b> TF \* IDF is an information retrieval technique that weighs a category’s frequency (TF) and its inverse frequency (IDF). The product of the TF and IDF scores of a category is called the TF\*IDF weight of that restaurant category. TF-IDF score of the category is calculated using below given formulas.
+  * <b> TF * IDF algorithm : </b> TF \* IDF is an information retrieval technique that weighs a category’s frequency (TF) and its inverse frequency (IDF). The product of the TF and IDF scores of a category is called the TF\*IDF weight of that restaurant category. The TF-IDF score of the category is calculated using below given formulas.
   
        <p align="center"><img src="https://github.com/saich9424/SOEN-691-PROJECT/blob/master/images/TF.png" width="500"></p>
 
@@ -111,7 +109,7 @@ We are going to use Python, Pandas, Spark and Matplotlib. We are going to use Py
               idf_dict[i] = math.log10(restaurant_count / (df_dict['sum(' + i + ')'])) 
          ```
 
-   * <b> Prediction : </b> First we have calculated the cosine similarity between User vector and Restaurant vector. After finding the cosine similarity we have used below given formula to calculate the user prediction.
+   * <b> Prediction : </b> First, we have calculated the cosine similarity between the User vector and Restaurant vector. After finding the cosine similarity we have used below given formula to calculate the user prediction.
       <p align="center"><img src="https://github.com/saich9424/SOEN-691-PROJECT/blob/master/images/Cosine.PNG" width="600"></p>
 
       <p align="center"><img src="https://github.com/saich9424/SOEN-691-PROJECT/blob/master/images/Prediction.png" width="600"></p>
@@ -145,8 +143,28 @@ We are going to use Python, Pandas, Spark and Matplotlib. We are going to use Py
             predictions.show(5)
            ```
            <br/>
+* <b>Collaborative filtering :</b> Unlike content-based filtering, this systems doesn’t require description of the data hence it recommends without knowing anything about the products.
 
-* <b>Alternating Least Squares (ALS) :</b>  Using this algorithm, we will try to predict the rating or preference that a user would give an item-based on past ratings and preferences of other users. In this technique, we will not use item metadata unlike content-based filtering algorithm.
+  * <b>Alternating Least Squares (ALS) :</b>  Apache Spark ML implements alternating least squares (ALS) for collaborative filtering, a very popular algorithm for making recommendations. ALS recommender is a matrix factorization algorithm that uses Alternating Least Squares with Weighted-Lamda-Regularization (ALS-WR). It factors the user to item matrix A into the user-to-feature matrix U and the item-to-feature matrix M: It runs the ALS algorithm in a parallel fashion.  
+
+  ALS is an iterative optimization process where we for every iteration try to arrive closer and closer to a factorized representation of our original data.
+  if we fix the set of variables X and treat
+them as constants, then the objective is a convex function of Y and vice versa. Our approach will
+1
+therefore be to fix Y and optimize X, then fix X and optimize Y , and repeat until convergence.
+This approach is known as ALS(Alternating Least Squares). For our objective function, the
+alternating least squares algorithm is as follows:
+
+        * <b> Algorithm : </b> Algorithm of ALS
+
+  
+         <p align="center"><img src="https://github.com/saich9424/SOEN-691-PROJECT/blob/master/images/als%20algorithm.png" width="500"></p>
+         
+         
+
+
+
+
 
 ### Metrics
 
