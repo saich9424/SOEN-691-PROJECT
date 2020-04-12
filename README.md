@@ -93,7 +93,9 @@ We are going to use Python, Pandas, Spark and Matplotlib. We are going to use Py
 
 ### Algorithms
 
-* <b>Content-based filtering :</b> In this algorithm, we will use item metadata, such as Locality, Cuisine, rating, etc. for restaurants, to make these recommendations. Here, we are solely relied on item data rather than other user's  metadata.
+* <b>Content-based filtering :</b> We have implemeted below given alorithms for Content-based filtering. Below given In this algorithm, we will use item metadata, such as Locality, Cuisine, rating, etc. for restaurants, to make these recommendations. Here, we are solely relied on item data rather than other user's  metadata.
+  * <b> TF*IDF algorithm : </b> TF\*IDF is an information retrieval technique that weighs a category’s frequency (TF) and its inverse category frequency (IDF). The product of the TF and IDF scores of a category is called the TF\*IDF weight of that restaurant category.
+
 
 * <b>Alternating Least Squares (ALS) :</b>  Using this algorithm, we will try to predict the rating or preference that a user would give an item-based on past ratings and preferences of other users. In this technique, we will not use item metadata unlike content-based filtering algorithm.
 
