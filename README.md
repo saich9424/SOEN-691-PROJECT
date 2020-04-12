@@ -56,7 +56,7 @@ The Zomato API provides exhaustive information about each food joint by differen
   * <b>city :</b> where restaurant resides. <br />
     * We have chosen this column to filter based on city.
   * <b>categories :</b> under which category restaurant resides. <br />
-    * We have chosen this column to generate the user profile.
+    * We have chosen this column to generate the item profile.
   * <b>total_reviews :</b> number of votes given to particular restaurant <br />
     * We have chosen this column to put thresold for minimum number of votes. If the restaurant have total     reviews less than five. we have filtered them out. 
 
