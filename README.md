@@ -94,7 +94,7 @@ The Zomato API provides exhaustive information about each food joint by differen
 
 * <b>Content-based filtering :</b> We have implemented the below-given algorithm for Content-based filtering. In this algorithm, we will use item metadata, such as Locality, Cuisine, rating, etc. for restaurants, to make these recommendations. Here, we have solely relied on item data rather than other user's metadata.
 
-  * <b> TF * IDF algorithm : </b> TF \* IDF is an information retrieval technique that weighs a category’s frequency (TF) and its inverse frequency (IDF). The product of the TF and IDF scores of a category is called the TF\*IDF weight of that restaurant category. The TF-IDF score of the category is calculated using below given formulas.
+  * <b> TF * IDF algorithm : </b> TF \* IDF is an information retrieval technique that weighs a category’s frequency (TF) and its inverse frequency (IDF). The product of the TF and IDF scores of a category is called the TF \* IDF weight of that restaurant category. The TF-IDF score of the category is calculated using below given formulas.
   
        <p align="center"><img src="https://github.com/saich9424/SOEN-691-PROJECT/blob/master/images/TF.png" width="500"></p>
 
