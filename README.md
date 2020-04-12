@@ -113,7 +113,6 @@ We are going to use Python, Pandas, Spark and Matplotlib. We are going to use Py
 ### Future Work
 
 * Going ahead, we can build Hybrid recommender systems. The best approach would be to use a combination of different approaches. Mix of collaborative and content-based filtering. Some of it will depend on preferences of the users and some on item features.
-* We could predict the rating on all cities instead of one cities which gives user preferences in various cities.
 * We can implement recommender systems with various algorithms such as SVD++,Bayesian Personalized Ranking (BPR) and deep learning algorithms.
 
 ## IV. References
