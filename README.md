@@ -108,6 +108,13 @@ We are going to use Python, Pandas, Spark and Matplotlib. We are going to use Py
 
 ![](images/Metric_Results.PNG)
 
+| Metric | Content Based Filtering | Collaborative Metric |
+| --- | --- | ---|
+| RMSE | 1.406242291057611 | 1.2542102156106667 |
+| MAE | 1.174760279634468 | 0.9522392380468712 |
+| MSE | 1.9775173811589584 | 1.5730432649421549 |
+| Runtime | 930000 ms | 768000 ms |
+
 ### Conclusion
 
 * The RMSE of content based is higher than the collaborative.
