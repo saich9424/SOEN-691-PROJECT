@@ -101,13 +101,6 @@ The Zomato API provides exhaustive information about each food joint by differen
        <p align="center"><img src="https://github.com/saich9424/SOEN-691-PROJECT/blob/master/images/IDF.png" width="500"></p>
  
       * <b> Implementation : </b> Code implemetation of this algorithm is given below.
-  
-         ```ruby
-          idf_dict = {}
-          df_dict = restaurant_df.groupBy().sum().collect()[0].asDict()
-          for i in categories_set:
-              idf_dict[i] = math.log10(restaurant_count / (df_dict['sum(' + i + ')'])) 
-         ```
 
    * <b> Prediction : </b> First, we have calculated the cosine similarity between the User vector and Restaurant vector. After finding the cosine similarity we have used below given formula to calculate the user prediction.
       <p align="center"><img src="https://github.com/saich9424/SOEN-691-PROJECT/blob/master/images/Cosine.PNG" width="600"></p>
@@ -119,34 +112,7 @@ The Zomato API provides exhaustive information about each food joint by differen
       Using this formula, we are calculating the predicted value. In the formula x is the cosine similarity as calculated in the previous formula. Here, x_max and x_min represents the thresold values of user values which is 1 or -1. And r_max and r_min represents the thresold values of rating. Rating scale is [1, 5].
 
         * <b> Implementation : </b> Code implemetation of this is given below.
- 
-           ```ruby
-            test_data = test_data.join(updated_ratings_df, 'user_index')
-            predictions = test_data.join(norm, 'restaurant_index')
-            predictions.show(5)
 
-            def prediction_method(x):
-                dict1 = x.asDict()
-                score1, score2, ans = 0, 0, 0
-
-                for c in categories_set:
-                    a = dict1[c]
-                    b = dict1['sum(' + c + ')']
-                    score1 = score1 + (a ** 2)
-                    score2 = score2 + (b ** 2)
-                    ans = ans + (a * b)
-
-                ans = ans / (math.sqrt(score1) * math.sqrt(score2))
-                ans = 1 + 2 * (ans + 1)
-                output = {'user_index': dict1.pop('restaurant_index'), 'restaurant_index': 
-                dict1.pop('user_index'), 'user_rating': dict1.pop('user_rating'), 'prediction': ans}
-                return Row(**output)
-
-
-            predictions = predictions.rdd.map(lambda x: prediction_method(x)).toDF()
-            predictions.show(5)
-           ```
-           <br/>
 * <b>Collaborative filtering :</b> Unlike content-based filtering, this systems doesn’t require description of the data hence it recommends without knowing anything about the products.
 
   * <b>Alternating Least Squares (ALS) :</b>  Apache Spark ML implements alternating least squares (ALS) for collaborative filtering, a very popular algorithm for making recommendations. ALS recommender is a matrix factorization algorithm that uses Alternating Least Squares with Weighted-Lamda-Regularization (ALS-WR). It factors the user to item matrix A into the user-to-feature matrix U and the item-to-feature matrix M: It runs the ALS algorithm in a parallel fashion.  
