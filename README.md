@@ -96,7 +96,7 @@ We are going to use Python, Pandas, Spark and Matplotlib. We are going to use Py
 * <b>Mean Squared Error (MSE) :</b> MSE measures average squared error of our predictions. For each point, it calculates square difference between the predictions and the target and then average those values.
 
 ## III. Results & Future Work
-### Results
+### Recommended Restaurants
 
 * <b>Content Based Recommended Restaurants </b>
 
@@ -104,7 +104,9 @@ We are going to use Python, Pandas, Spark and Matplotlib. We are going to use Py
 
 * <b>ALS Recommended Restaurants </b>
 
-// ![](images/Content_Based_Restaurants.png)
+### Metrics Results
+
+![](images/Content_Based_Restaurants.png)
 
 ### Conclusion
 
