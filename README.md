@@ -116,7 +116,7 @@ The Zomato API provides exhaustive information about each food joint by differen
 
       <p align="center"><img src="https://github.com/saich9424/SOEN-691-PROJECT/blob/master/images/Prediction.png" width="600"></p>
       
-      
+      Using this formula, we are ncalculating the predicted value.  
 
         * <b> Implementation : </b> Code implemetation of this is given below.
  
