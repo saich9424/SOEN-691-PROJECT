@@ -50,7 +50,7 @@ These studies are done using algorithms such as Naive Bayes, K-NN algorithms and
 
 The Zomato API provides exhaustive information about each food joint by different filters like location, cuisine, etc. The data is collected using the API. The dataset consists of two CSV files. One CSV file contains all the different restaurants and their attributes. There are more than 40k restaurants. The other file contains the review provided by different users to different restaurants. The rating scale is [1, 5]. It has more than 1000k rows where each row represents the review and rating given by the user. Looking at the number of restaurants and reviews, we think it is enough to be considered for big data.
 
-* <b>Restaurant.csv </b> : This dataset contains 42K unique along with different attribues of each restaurants. We are interrested in below given columns.
+* <b>Restaurant.csv </b> : This dataset contains 42K unique restaurants along with different attribues of each restaurants. We are interrested in below given columns.
   * <b>restaurant_id :</b> unique id for restaurant <br />
     * We have chosen this column to uniquly identify restaurant.
   * <b>city :</b> where restaurant resides. <br />
