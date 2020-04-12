@@ -116,7 +116,7 @@ We are going to use Python, Pandas, Spark and Matplotlib. We are going to use Py
 * We could predict the rating on all cities instead of one cities which gives user preferences in various cities.
 * We can implement recommender systems with various algorithms such as SVD++,Bayesian Personalized Ranking (BPR) and deep learning algorithms.
 
-### References
+## IV. References
 
 * Recommender Systems: The Textbook, Springer, April 2016 http://www.charuaggarwal.net/Recommender-Systems.htm
 * A Preference-Based Restaurant Recommendation System for Individuals and Groups https://www.cs.cornell.edu/~rahmtin/Files/YelpClassProject.pdf
