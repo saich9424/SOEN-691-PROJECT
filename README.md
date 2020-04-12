@@ -95,6 +95,26 @@ We are going to use Python, Pandas, Spark and Matplotlib. We are going to use Py
 * <b>Mean Absolute Error (MAE) :</b> MAE measures the average magnitude of the errors in a set of predictions, without considering their direction. It’s the average over the test sample of the absolute differences between prediction and actual observation where all individual differences have equal weight.
 * <b>Mean Squared Error (MSE) :</b> MSE measures average squared error of our predictions. For each point, it calculates square difference between the predictions and the target and then average those values.
 
+### Results
+
+### Conclusion
+
+* The RMSE of content based is higher than the collaborative.
+* Restaurant ratings are diverse in content-based recommender.
+* Content based recommended the restaurants that have high review count whereas collaborative recommendations tend to have higher ratings and lower review count.
+* Collaborative Filtering algorithm has the limitations of Cold-start problem where a recommender does not have the adequate information about a user or an item to make relevant predictions. Data Sparsity Is the problem that occurs as a result of lack of enough information.
+
+### Limitations
+
+* As API gives the large data around 400 gb, it is difficult to extract and process.
+* There are limited hardware resources to process and filter large data.
+
+### Future Work
+
+* Hybrid recommender systems - The best approach would be to use a combination of different approaches. Mix of collaborative and content-based filtering. Some of it will depend on preferences of the users and some on item features.
+* We could predict the rating on all cities instead of one cities which gives user preferences in various cities.
+* Implement recommender systems with various algorithms such as SVD++,Bayesian Personalized Ranking (BPR) and deep learning algorithms.
+
 ### References
 
 * Recommender Systems: The Textbook, Springer, April 2016 http://www.charuaggarwal.net/Recommender-Systems.htm
