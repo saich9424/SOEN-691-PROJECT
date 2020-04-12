@@ -106,7 +106,7 @@ We are going to use Python, Pandas, Spark and Matplotlib. We are going to use Py
 
 ### Metrics Results
 
-![](images/Metrics_Results.PNG)
+![](images/Metric_Results.PNG)
 
 ### Conclusion
 
