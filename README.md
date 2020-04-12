@@ -116,7 +116,7 @@ The Zomato API provides exhaustive information about each food joint by differen
 
       <p align="center"><img src="https://github.com/saich9424/SOEN-691-PROJECT/blob/master/images/Prediction.png" width="600"></p>
       
-      Using this formula, we are ncalculating the predicted value.  
+      Using this formula, we are calculating the predicted value. In the formula x is the cosine similarity as calculated in the previous formula. Here, x_max and x_min represents the thresold values of user values which is 1 or -1. And r_max and r_min represents the thresold values of rating. Rating scale is [1, 5].
 
         * <b> Implementation : </b> Code implemetation of this is given below.
  
