@@ -73,11 +73,11 @@ Though it's unofficial dataset, the datset uniform but definitely not ideal. In 
 
 * <b>Restaurants </b>
 
-![](images/Restaurants.PNG)
+![](images/Restaurant.png)
 
 * <b>Reviews </b>
 
-![](images/Reviews.PNG)
+![](images/Reviews.png)
 
 ### Technologies
 
