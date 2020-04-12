@@ -50,7 +50,7 @@ This dataset is not officially provided by the Data Owner. It is collected using
 
 The dataset consists of two csv files. One csv file containes all the different restaurant and it's attributes. There are more than 40k restaurants. The other file contains the review provided by different user to different restaurants. 
 
-* Restaurant.csv
+* <b>Restaurant.csv <b> : This dataset contains 42K unique along with different attribues of each restaurants. We are interrested in below given columns.
   * <b>restaurant_id :</b> unique Id for restaurant <br />
     * We have chosen this column to uniquly identify restaurant.
   * <b>city :</b> where restaurant resides. <br />
@@ -60,7 +60,7 @@ The dataset consists of two csv files. One csv file containes all the different 
   * <b>total_reviews :</b> number of votes given to particular restaurant <br />
     * We have chosen this column to put thresold for minimum number of votes. If the restaurant have total     reviews less than five. we have filtered them out. 
 
-* Reviews.csv : The rating scale is [1, 5]. It has more than 1400k rows where each row represents the review and rating given by the user. Looking at the the number of restaurants and reviews, we think it is enough to be considered for big data. 
+* <b>Reviews.csv : </b> This dataset contains more than 1400k rows where each row represents the review and rating given by the user. The rating scale is [1, 5]. We are interrested in below given columns.
   * <b>user_id :</b> unique Id for user. <br />
     * We have chosen this column to uniquly identify users.
   * <b>user_rating :</b> rating given by a user to the restaurant. <br />
