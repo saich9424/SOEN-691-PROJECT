@@ -23,7 +23,7 @@ historical data. Zomato is a very good source of such data with not only restaur
 
 ### Objectives
 
-The main goal of the project is to build collaborative and content-based recommender systems based on the user ratings using. These are the two main recommender systems discussed in class. Collaborative filtering approaches building a model from a user's past behavior whereas Content-based filtering approaches utilize a series of discrete characteristics of an item in order to recommend additional items with similar properties.
+The main goal of the project is to build collaborative and content-based recommender systems based on the user ratings. These are the two main recommender systems discussed in class. Collaborative filtering approaches building a model from a user's past behavior whereas Content-based filtering approaches utilize a series of discrete characteristics of an item in order to recommend additional items with similar properties.
 
 ### Presentation of the problem to solve
 
@@ -66,7 +66,6 @@ The Zomato API provides exhaustive information about each food joint by differen
   * <b>user_rating :</b> rating given by a user to the restaurant. <br />
     * We have chosen this column if the user want to filter based on city.
 
-Though it's unofficial dataset, the datset uniform but definitely not ideal. In other words, there are many attributes which definitely not going to help in calculating recommandation. So before that we need to transform the data into desired dataset.
 
 
 ### Sample Data
@@ -80,6 +79,15 @@ Though it's unofficial dataset, the datset uniform but definitely not ideal. In 
 ![](images/Reviews.png)
 
 ### Technologies
+
+* <b>Apache Spark: </b>Apache Spark is a unified analytics engine for big data processing. We will use Dataframe API and  Resilient Distributed Dataset (RDD) for data preprocessing and building data frames.
+
+* <b>Pandas: </b>We will use Pandas for data manipulation, analysis, sorting, handling missing values, cleaning, and visualization.
+
+* <b>Matplotlib: </b> We will use it to generate graphs and for visualization of huge data.
+* <b> PySpark ML: </b> It is  DataFrame-based machine learning APIs to let users quickly assemble and configure practical machine learning pipelines.
+* <b>  Programming language: </b> Python
+
 
 We are going to use Python, Pandas, Spark and Matplotlib. We are going to use Python libraries for general computation on data. Pandas & Spark will be useful analysing data and also transforming the data at the same time. Using Matplotlib, we will be able to generate graphs for visulization of huge data.
 
