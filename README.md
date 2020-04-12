@@ -50,7 +50,7 @@ This dataset is not officially provided by the Data Owner. It is collected using
 
 The dataset consists of two csv files. One csv file containes all the different restaurant and it's attributes. There are more than 40k restaurants. The other file contains the review provided by different user to different restaurants. 
 
-* <b>Restaurant.csv <b> : This dataset contains 42K unique along with different attribues of each restaurants. We are interrested in below given columns.
+* <b>Restaurant.csv </b> : This dataset contains 42K unique along with different attribues of each restaurants. We are interrested in below given columns.
   * <b>restaurant_id :</b> unique Id for restaurant <br />
     * We have chosen this column to uniquly identify restaurant.
   * <b>city :</b> where restaurant resides. <br />
