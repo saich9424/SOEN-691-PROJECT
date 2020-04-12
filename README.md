@@ -109,7 +109,7 @@ We are going to use Python, Pandas, Spark and Matplotlib. We are going to use Py
     &nbsp; &nbsp; &nbsp; &nbsp; ` for i in categories_set: `<br>
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ` idf_dict[i] = math.log10(restaurant_count / (df_dict['sum(' + i + ')'])) `<br>
 
-    * <b> Prediction : </b> For caluculating the prediction we have used below given formula.
+    * <b> Prediction : </b> First we have calculated the cosine similarity between User vector and Restaurant vector. After finding the cosine similarity we have used below given formula to calculate the user prediction.
   
   
   
