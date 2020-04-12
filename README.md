@@ -103,7 +103,9 @@ We are going to use Python, Pandas, Spark and Matplotlib. We are going to use Py
 
 ### Metrics
 
-* <b>Root mean squared error (RMSE) :</b> We will use this metric to measure of the differences between sample values and predicted by a recommender model.
+* <b>Root Mean Squared Error (RMSE) :</b> RMSE is a quadratic scoring rule that also measures the average magnitude of the error. It’s the square root of the average of squared differences between prediction and actual observation.
+* <b>Mean Absolute Error (MAE) :</b> MAE measures the average magnitude of the errors in a set of predictions, without considering their direction. It’s the average over the test sample of the absolute differences between prediction and actual observation where all individual differences have equal weight.
+* <b>Mean Squared Error (MSE) :</b> MSE basically measures average squared error of our predictions. For each point, it calculates square difference between the predictions and the target and then average those values.
 
 ### References
 
