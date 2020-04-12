@@ -95,6 +95,7 @@ We are going to use Python, Pandas, Spark and Matplotlib. We are going to use Py
 ### Algorithms
 
 * <b>Content-based filtering :</b> We have implemeted below given alorithms for Content-based filtering. Below given In this algorithm, we will use item metadata, such as Locality, Cuisine, rating, etc. for restaurants, to make these recommendations. Here, we are solely relied on item data rather than other user's  metadata.
+
   * <b> TF * IDF algorithm : </b> TF \* IDF is an information retrieval technique that weighs a category’s frequency (TF) and its inverse frequency (IDF). The product of the TF and IDF scores of a category is called the TF\*IDF weight of that restaurant category. TF-IDF score of the category is calculated using below given formulas.
   
  <p align="center">
@@ -104,7 +105,15 @@ We are going to use Python, Pandas, Spark and Matplotlib. We are going to use Py
  <p align="center">
       <img src="https://github.com/saich9424/SOEN-691-PROJECT/blob/master/images/IDF.png" width="500">
  </p>
-
+ 
+  * Code implemetation of this algorithm is given below.
+  
+    &nbsp; &nbsp; &nbsp; &nbsp; ` idf_dict = {} ` <br>
+    &nbsp; &nbsp; &nbsp; &nbsp; ` df_dict = restaurant_df.groupBy().sum().collect()[0].asDict() `<br>
+      <br>
+    &nbsp; &nbsp; &nbsp; &nbsp; ` for i in categories_set: `<br>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ` idf_dict[i] = math.log10(restaurant_count / (df_dict['sum(' + i + ')'])) `<br>
+  
 
 * <b>Alternating Least Squares (ALS) :</b>  Using this algorithm, we will try to predict the rating or preference that a user would give an item-based on past ratings and preferences of other users. In this technique, we will not use item metadata unlike content-based filtering algorithm.
 
