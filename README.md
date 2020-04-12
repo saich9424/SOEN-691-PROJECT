@@ -112,6 +112,10 @@ We are going to use Python, Pandas, Spark and Matplotlib. We are going to use Py
     &nbsp; &nbsp; &nbsp; &nbsp; ` df_dict = restaurant_df.groupBy().sum().collect()[0].asDict() `<br>
     &nbsp; &nbsp; &nbsp; &nbsp; ` for i in categories_set: `<br>
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ` idf_dict[i] = math.log10(restaurant_count / (df_dict['sum(' + i + ')'])) `<br>
+
+  * Prediction : For caluculating the prediction we have used below given formula.
+  
+  
   
 
 * <b>Alternating Least Squares (ALS) :</b>  Using this algorithm, we will try to predict the rating or preference that a user would give an item-based on past ratings and preferences of other users. In this technique, we will not use item metadata unlike content-based filtering algorithm.
