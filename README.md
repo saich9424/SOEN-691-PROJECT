@@ -104,7 +104,7 @@ We are going to use Python, Pandas, Spark and Matplotlib. We are going to use Py
 
 * <b>ALS Recommended Restaurants </b>
 
-![](images/Content_Based_Restaurants.png)
+// ![](images/Content_Based_Restaurants.png)
 
 ### Conclusion
 
