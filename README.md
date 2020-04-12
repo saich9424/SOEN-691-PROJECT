@@ -134,6 +134,32 @@ The Zomato API provides exhaustive information about each food joint by differen
 * <b>Data Collection: </b>Zomato has built a highly coherent and focused experience that puts the emphasis on being a comprehensive network for food-lovers. Very little on the site is superfluous. We have used the  API to collect the data.
 
 * <b>Data Handling:  </b>The data comprised of all possible features listed on Zomato like "Dine-in or Takeaway", etc. But then we switched to Kolkata as our sample city. We have removed the restaurants with null restaurant_id,user_id and filtered out restaurants based on category and city. In collaborative filtering, we have joined the restaurant and review files based on the restaurant ID.
+
+### Dataset analysis
+* <b>Data Collection: </b>Zomato has built a highly coherent and focused experience that puts the emphasis on being a comprehensive network for food-lovers. Very little on the site is superfluous. We have used the  API to collect the data.
+
+* <b>Data Handling:  </b>The data comprised of all possible features listed on Zomato like "Dine-in or Takeaway", etc. But then we switched to Kolkata as our sample city. We have removed the restaurants with null restaurant_id,user_id and filtered out restaurants based on category and city. In collaborative filtering, we have joined the restaurant and review files based on the restaurant ID.
+
+*  Data after joining restaurants and review files for collaborative filtering
+
+      <p align="center"><img src="https://github.com/saich9424/SOEN-691-PROJECT/blob/master/images/after%20filtering.png" width="500"></p>
+      
+### Technology Implementation
+* <b>Content-based filtering :</b>
+
+* <b>Collaborative filtering :</b>
+  * <b>Steps in ALS:  </b>
+  - User restaurant review data is collected ,Parse the data into the input format for the ALS algorithm and built user-restaurant interaction model  
+  - Split data into train and test
+  - ALS model selection and evaluation a user product matrix model.
+  - Calculate rmse
+  - Model outputs top N restaurant recommendations for that user based on the ranking of restaurant rating predictions
+
+  * <b>ALS Hyperparams:  </b> These are the optimized values
+  - maxIter: (10) - the maximum number of iterations to run 
+  - rank: (70) - the number of latent factors in the model (defaults to 10)
+  - regParam: the regularization parameter in ALS (defaults to 1.0)
+
 ### Recommended Restaurants
 
 * <b>Content Based Recommended Restaurants </b>
