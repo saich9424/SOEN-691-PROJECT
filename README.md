@@ -6,49 +6,49 @@
 | --- | --- | ---|
 | 40087977 | Sai Krishna | saich94@gmail.com |
 | 40083289 | Dhaval Modi | dhavalmodi556@gmail.com |
-| 40082236 | Manushree Mallaraju | NA |
+| 40082236 | Manushree Mallaraju | manushreemallaraju@gmail.com |
 
 ## Project Type
 Dataset Analysis (Recommender System)
 
 ## Abstract
-In the given dataset we have more than 40k restaurants scattered across different metro cities. It is obviously difficult to find the best restaurant in the city. So for a user, who is new to the city, we want to build a recommender system which can give him/her options of various restaurants based on the different parameters. The parameters that we are going to consider are reviews given by others, similar restaurant to his/her personal preference and location. We will implement two recommender systems, which will be content based and colloberative filtering based.
+In the given dataset we have more than 40k restaurants scattered across different metro cities. Our goal is to build the recommender system as recommender Engines or Systems are among the most popular applications of data science today.These systems  are used to predict the “rating” or “preference” that a user would give to an item. We will implement two recommender systems, which will be content based and colloberative filtering based using algorithms ALS and TF-IDF in Apache Spark. We will evaluate the results based on RMSE and other metrics and recommend restaurants to the user.
 
 ## I. Introduction
 ### Context
 
-There are many options available to a particular user. But it would be more helpful, if we could get personalized preferences. This user might review the restaurant. And adding his/her rating, we can improvise the recommedation for the next user. So, with each increased rating we can make our recommender system more efficient with increasing amount of data. That is exactly our goal, to make best use of the avalable dataset and to make the best matching restaurant to user's need.
+The restaurant recommendation system is a very popular service whose sophistication keeps increasing every day. The objective of a Recommender System is to generate meaningful recommendations to a collection of users for items or products that might interest them. There are many recommendation systems available for problems like shopping, online video entertainment, games, etc. Restaurants & Dining is one area where there is a big opportunity to recommend dining options to users based on their preferences as well as
+historical data. Zomato is a very good source of such data with not only restaurant reviews, but also user-level information on their preferred restaurants.
+
 
 ### Objectives
 
-* The main objective of this project is to recommend a restaurant to a user, based on ratings and number of votes using two most popular algorithms.
-* The second objective is to evaluate the result obtained using Root mean squared error (RMSE) metric. And then comparing the evaluation results of these algorithms.
+The main goal of the project is to build collaborative and content-based recommender systems based on the user ratings using. These are the two main recommender systems discussed in class. Collaborative filtering approaches building a model from a user's past behavior whereas Content-based filtering approaches utilize a series of discrete characteristics of an item in order to recommend additional items with similar properties.
 
 ### Presentation of the problem to solve
 
-* <b>Problem : </b> To find a recommedation of a restaurant based on the reviews/preference and location.
+* <b>Problem: </b> Build a recommendation system based on user reviews and choices.
 
-  <b>Solution: </b> First we will analyse the exisitng data, transform the data. And then we will recommend the restaurant to users based on Content Based recommnedation and ALS recommender. At the end, we will also compare the result of these two recommnder algorithms.
+  <b>Solution: </b>First we will analyze the existing data, transform the data. And then we will recommend the restaurant to users based on Content-Based and Collaborative systems
 
 * <b>Problem : </b> Out of these two algorithms, which algorithm performs better.
  
-  <b>Solution: </b> We will evaluate the each algorithms results using RMSE metric. Then we can compare these results to find out the best performing algorithm.
+  <b>Solution: </b> We will evaluate the results of each algorithm using metrics like RMSE, MAE. Then we can compare these results to find out the best performing algorithm.
 
 ### Related work 
 
 There are many data analysis papers on this datataset. <br />
+* https://arxiv.org/pdf/1903.10117.pdf<br />
 * https://www.kaggle.com/parthsharma5795/finding-the-best-restaurants-in-bangalore <br />
 * https://www.kaggle.com/chirag9073/zomato-restaurants-analysis-and-prediction <br />
 
-These two studies can be taken into consideration into initial stages of data preparation. For ex. Data Loading and Cleaning. However, these work are limited to analysis of the data. We want to go one step further and want to implement ALS and Content based recommender system for the user base.
+These studies are done using algorithms such as Naive Bayes, K-NN algorithms and metrics like RMSE, MAE is used to evaluate the result and some studies are at analyzing the data. We will build the recommender system using collaborative, Content-based approaches for the user base and analyze the results.
 
 ## II. Materials and Methods
 
 ### Dataset
 
-This dataset is not officially provided by the Data Owner. It is collected using the APIs. It is publicly available and uploaded by the user who has colllected and updated the data over the period of time. 
-
-The dataset consists of two csv files. One csv file containes all the different restaurant and it's attributes. There are more than 40k restaurants. The other file contains the review provided by different user to different restaurants. 
+The Zomato API provides exhaustive information about each food joint by different filters like location, cuisine, etc. The data is collected using the API. The dataset consists of two CSV files. One CSV file contains all the different restaurants and their attributes. There are more than 40k restaurants. The other file contains the review provided by different users to different restaurants. The rating scale is [1, 5]. It has more than 1000k rows where each row represents the review and rating given by the user. Looking at the number of restaurants and reviews, we think it is enough to be considered for big data.
 
 * <b>Restaurant.csv </b> : This dataset contains 42K unique along with different attribues of each restaurants. We are interrested in below given columns.
   * <b>restaurant_id :</b> unique id for restaurant <br />
