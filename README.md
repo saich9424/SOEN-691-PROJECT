@@ -169,6 +169,11 @@ The Zomato API provides exhaustive information about each food joint by differen
 * <b>Mean Squared Error (MSE) :</b> MSE measures average squared error of our predictions. For each point, it calculates square difference between the predictions and the target and then average those values.
 
 ## III. Results & Future Work
+
+### Dataset analysis
+* <b>Data Collection :</b>Zomato has built a highly coherent and focused experience that puts the emphasis on being a comprehensive network for food-lovers. Very little on the site is superfluous. We have used the  API to collect the data.
+
+* <b>Data Handling :</b>The data comprised of all possible features listed on Zomato like "Dine-in or Takeaway", etc. But then we switched to Kolkata as our sample city. We have removed the restaurants with null restaurant_id,user_id and filtered out restaurants based on category and city. In the collaborative filtering we have joined the restaurant and review files based on the restaurant ID.
 ### Recommended Restaurants
 
 * <b>Content Based Recommended Restaurants </b>
