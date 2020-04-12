@@ -100,8 +100,6 @@ The Zomato API provides exhaustive information about each food joint by differen
 
        <p align="center"><img src="https://github.com/saich9424/SOEN-691-PROJECT/blob/master/images/IDF.png" width="500"></p>
  
-      * <b> Implementation : </b> Code implemetation of this algorithm is given below.
-
    * <b> Prediction : </b> First, we have calculated the cosine similarity between the User vector and Restaurant vector. After finding the cosine similarity we have used below given formula to calculate the user prediction.
       <p align="center"><img src="https://github.com/saich9424/SOEN-691-PROJECT/blob/master/images/Cosine.PNG" width="600"></p>
       
