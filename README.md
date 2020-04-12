@@ -140,8 +140,7 @@ We are going to use Python, Pandas, Spark and Matplotlib. We are going to use Py
 
 ## IV. References
 
-* Recommender Systems: The Textbook, Springer, April 2016 http://www.charuaggarwal.net/Recommender-Systems.htm
+* Content-Based Recommendation System. Description and implementation with Python. https://medium.com/towards-artificial-intelligence/content-based-recommender-system-4db1b3de03e7
+* Recommendation System, collaborative recommender systems & content-based recommender systems,  http://snap.stanford.edu/class/cs246-2012/slides/07-recsys1.pdf
 * A Preference-Based Restaurant Recommendation System for Individuals and Groups https://www.cs.cornell.edu/~rahmtin/Files/YelpClassProject.pdf
 * U. Farooque, B. Khan, A. B. Junaid and A. Gupta, "Collaborative Filtering based simple restaurant recommender," 2014 International Conference on Computing for Sustainable Global Development (INDIACom), New Delhi, 2014, pp. 495-499.
-
-
