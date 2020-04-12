@@ -98,22 +98,18 @@ We are going to use Python, Pandas, Spark and Matplotlib. We are going to use Py
 
   * <b> TF * IDF algorithm : </b> TF \* IDF is an information retrieval technique that weighs a category’s frequency (TF) and its inverse frequency (IDF). The product of the TF and IDF scores of a category is called the TF\*IDF weight of that restaurant category. TF-IDF score of the category is calculated using below given formulas.
   
- <p align="center">
-      <img src="https://github.com/saich9424/SOEN-691-PROJECT/blob/master/images/TF.png" width="500">
- </p>
+   <p align="center"><img src="https://github.com/saich9424/SOEN-691-PROJECT/blob/master/images/TF.png" width="500"></p>
 
- <p align="center">
-      <img src="https://github.com/saich9424/SOEN-691-PROJECT/blob/master/images/IDF.png" width="500">
- </p>
+   <p align="center"><img src="https://github.com/saich9424/SOEN-691-PROJECT/blob/master/images/IDF.png" width="500"></p>
  
-  * Code implemetation of this algorithm is given below.
+    * <b> Implementation : </b> Code implemetation of this algorithm is given below.
   
     &nbsp; &nbsp; &nbsp; &nbsp; ` idf_dict = {} ` <br>
     &nbsp; &nbsp; &nbsp; &nbsp; ` df_dict = restaurant_df.groupBy().sum().collect()[0].asDict() `<br>
     &nbsp; &nbsp; &nbsp; &nbsp; ` for i in categories_set: `<br>
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ` idf_dict[i] = math.log10(restaurant_count / (df_dict['sum(' + i + ')'])) `<br>
 
-  * Prediction : For caluculating the prediction we have used below given formula.
+    * <b> Prediction : </b> For caluculating the prediction we have used below given formula.
   
   
   
