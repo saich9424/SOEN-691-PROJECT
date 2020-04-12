@@ -142,7 +142,7 @@ The Zomato API provides exhaustive information about each food joint by differen
 
 *  Data after joining restaurants and review files for collaborative filtering
 
-      <p align="center"><img src="https://github.com/saich9424/SOEN-691-PROJECT/blob/master/images/after%20filtering.png" width="500"></p>
+  <p align="center"><img src="https://github.com/saich9424/SOEN-691-PROJECT/blob/master/images/after%20filtering.png" width="500"></p>
       
 ### Technology Implementation
 * <b>Content-based filtering :</b>
