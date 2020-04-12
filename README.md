@@ -104,10 +104,12 @@ We are going to use Python, Pandas, Spark and Matplotlib. We are going to use Py
  
       * <b> Implementation : </b> Code implemetation of this algorithm is given below.
   
-          &nbsp; &nbsp; &nbsp; &nbsp; ` idf_dict = {} ` <br>
-          &nbsp; &nbsp; &nbsp; &nbsp; ` df_dict = restaurant_df.groupBy().sum().collect()[0].asDict() `<br>
-          &nbsp; &nbsp; &nbsp; &nbsp; ` for i in categories_set: `<br>
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ` idf_dict[i] = math.log10(restaurant_count / (df_dict['sum(' + i + ')'])) `<br>
+         ```ruby
+          idf_dict = {}
+          df_dict = restaurant_df.groupBy().sum().collect()[0].asDict()
+          for i in categories_set:
+              idf_dict[i] = math.log10(restaurant_count / (df_dict['sum(' + i + ')'])) 
+         ```
 
    * <b> Prediction : </b> First we have calculated the cosine similarity between User vector and Restaurant vector. After finding the cosine similarity we have used below given formula to calculate the user prediction.
       <p align="center"><img src="https://github.com/saich9424/SOEN-691-PROJECT/blob/master/images/Cosine.PNG" width="600"></p>
@@ -134,8 +136,8 @@ We are going to use Python, Pandas, Spark and Matplotlib. We are going to use Py
 
                 ans = ans / (math.sqrt(score1) * math.sqrt(score2))
                 ans = 1 + 2 * (ans + 1)
-                output = {'user_index': dict1.pop('restaurant_index'), 'restaurant_index': dict1.pop('user_index'), 'user_rating': dict1.pop('user_rating'),
-                          'prediction': ans}
+                output = {'user_index': dict1.pop('restaurant_index'), 'restaurant_index': 
+                dict1.pop('user_index'), 'user_rating': dict1.pop('user_rating'), 'prediction': ans}
                 return Row(**output)
 
 
