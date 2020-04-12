@@ -52,13 +52,13 @@ The dataset consists of two csv files. One csv file containes all the different 
 
 * Restaurant.csv
   * <b>restaurant_id :</b> unique Id for restaurant <br />
-    &nbsp;   &nbsp;   &nbsp; We have chosen this column to uniquly identify restaurant.
+    * We have chosen this column to uniquly identify restaurant.
    * <b>city :</b> where restaurant resides. <br />
     &nbsp;   &nbsp;   &nbsp; We have chosen this column if the user want to filter based on city.
    * <b>categories :</b> under which category restaurant resides. <br />
     &nbsp;   &nbsp;   &nbsp; We have chosen this column to generate the user profile.
     * <b>total_reviews :</b> number of votes given to particular restaurant <br />
-    &nbsp;   &nbsp;   &nbsp; We have chosen this column to put thresold for minimum number of votes. If the restaurant have total     &nbsp;   &nbsp;   &nbsp;reviews less than five. we have filtered them out. 
+    &nbsp;   &nbsp;   &nbsp; We have chosen this column to put thresold for minimum number of votes. If the restaurant have total     reviews less than five. we have filtered them out. 
 
 
 The rating scale is [1, 5]. It has more than 1400k rows where each row represents the review and rating given by the user. Looking at the the number of restaurants and reviews, we think it is enough to be considered for big data. 
