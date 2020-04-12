@@ -112,7 +112,7 @@ The Zomato API provides exhaustive information about each food joint by differen
    * <b> Prediction : </b> First, we have calculated the cosine similarity between the User vector and Restaurant vector. After finding the cosine similarity we have used below given formula to calculate the user prediction.
       <p align="center"><img src="https://github.com/saich9424/SOEN-691-PROJECT/blob/master/images/Cosine.PNG" width="600"></p>
       
-      Where r is a user vector and r' is restaurant vector. Using the above mentioned formula we can find the theta, which implies the distance in terms of angle. Lesser the theta, more the similarity. We can calucate the distance using 180 - theta. the two vectors that you wish to calculate the distance; vi and wi are components of vector v and w respectively; and i is the number of components we have.
+      Where r is a user vector and r' is restaurant vector. Using the above mentioned formula we can find the theta, which implies the distance in terms of angle. Lesser the theta, more the similarity. We can calucate the distance using 180 - theta. The two vectors that we wish to calculate the distance; r_i and r'_i are components of vector r and r' respectively; and i is the number of components we have.
 
       <p align="center"><img src="https://github.com/saich9424/SOEN-691-PROJECT/blob/master/images/Prediction.png" width="600"></p>
       
