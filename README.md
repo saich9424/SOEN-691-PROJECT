@@ -82,12 +82,10 @@ The Zomato API provides exhaustive information about each food joint by differen
 ### Technologies
 
 * <b>Apache Spark: </b>Apache Spark is a unified analytics engine for big data processing. We will use Dataframe API and  Resilient Distributed Dataset (RDD) for data preprocessing and building data frames.
-
 * <b>Pandas: </b>We will use Pandas for data manipulation, analysis, sorting, handling missing values, cleaning, and visualization.
-
 * <b>Matplotlib: </b> We will use it to generate graphs and for visualization of huge data.
-* <b> PySpark ML: </b> It is  DataFrame-based machine learning APIs to let users quickly assemble and configure practical machine learning pipelines.
-* <b>  Programming language: </b> Python
+* <b>PySpark ML: </b> It is  DataFrame-based machine learning APIs to let users quickly assemble and configure practical machine learning pipelines.
+* <b>Programming language: </b> Python
 
 
 ### Algorithms
