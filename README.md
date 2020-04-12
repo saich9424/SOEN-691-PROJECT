@@ -66,19 +66,7 @@ The dataset consists of two csv files. One csv file containes all the different 
   * <b>user_rating :</b> rating given by a user to the restaurant. <br />
     * We have chosen this column if the user want to filter based on city.
 
-
-
-
 Though it's unofficial dataset, the datset uniform but definitely not ideal. In other words, there are many attributes which definitely not going to help in calculating recommandation. So before that we need to transform the data into desired dataset.
-
-The main columns we have considered are given below.
-
-
-* <b>user_id :</b> unique Id for user profile <br />
-&nbsp;   &nbsp;   &nbsp; We have chosen this column to uniquly identify users.
-
-* <b>user_rating :</b> average rating of the restaurant <br />
-&nbsp;   &nbsp;   &nbsp; We have chosen this column to use these rating for content based filtering.
 
 
 ### Sample Data
