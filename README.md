@@ -111,8 +111,6 @@ The Zomato API provides exhaustive information about each food joint by differen
       
       Using this formula, we are calculating the predicted value. In the formula x is the cosine similarity as calculated in the previous formula. Here, x_max and x_min represents the thresold values of user values which is 1 or -1. And r_max and r_min represents the thresold values of rating. Rating scale is [1, 5].
 
-        * <b> Implementation : </b> Code implemetation of this is given below.
-
 * <b>Collaborative filtering :</b> Unlike content-based filtering, this systems doesn’t require description of the data hence it recommends without knowing anything about the products.
 
   * <b>Alternating Least Squares (ALS) :</b>  Apache Spark ML implements alternating least squares (ALS) for collaborative filtering, a very popular algorithm for making recommendations. ALS recommender is a matrix factorization algorithm that uses Alternating Least Squares with Weighted-Lamda-Regularization (ALS-WR). It factors the user to item matrix A into the user-to-feature matrix U and the item-to-feature matrix M: It runs the ALS algorithm in a parallel fashion.  
