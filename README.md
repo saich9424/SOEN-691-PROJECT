@@ -110,9 +110,10 @@ We are going to use Python, Pandas, Spark and Matplotlib. We are going to use Py
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ` idf_dict[i] = math.log10(restaurant_count / (df_dict['sum(' + i + ')'])) `<br>
 
    * <b> Prediction : </b> First we have calculated the cosine similarity between User vector and Restaurant vector. After finding the cosine similarity we have used below given formula to calculate the user prediction.
-    <br>
     <p align="center"><img src="https://github.com/saich9424/SOEN-691-PROJECT/blob/master/images/Cosine.PNG" width="600"></p>
-  
+
+    <p align="center"><img src="https://github.com/saich9424/SOEN-691-PROJECT/blob/master/images/Prediction.png" width="600"></p>
+
   
 
 * <b>Alternating Least Squares (ALS) :</b>  Using this algorithm, we will try to predict the rating or preference that a user would give an item-based on past ratings and preferences of other users. In this technique, we will not use item metadata unlike content-based filtering algorithm.
