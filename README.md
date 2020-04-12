@@ -33,7 +33,7 @@ The main goal of the project is to build collaborative and content-based recomme
 
 * <b>Problem : </b> Out of these two algorithms, which algorithm performs better.
  
-  <b>Solution: </b> We will evaluate the results of each algorithm using metrics like RMSE, MAE. Then we can compare these results to find out the best performing algorithm.
+  <b>Solution: </b> We will evaluate the results of each algorithm using metrics like RMSE, MAE & MSE. Then we can compare these results to find out the best performing algorithm.
 
 ### Related work 
 
