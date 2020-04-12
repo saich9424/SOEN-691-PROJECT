@@ -110,7 +110,6 @@ We are going to use Python, Pandas, Spark and Matplotlib. We are going to use Py
   
     &nbsp; &nbsp; &nbsp; &nbsp; ` idf_dict = {} ` <br>
     &nbsp; &nbsp; &nbsp; &nbsp; ` df_dict = restaurant_df.groupBy().sum().collect()[0].asDict() `<br>
-      <br>
     &nbsp; &nbsp; &nbsp; &nbsp; ` for i in categories_set: `<br>
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ` idf_dict[i] = math.log10(restaurant_count / (df_dict['sum(' + i + ')'])) `<br>
   
