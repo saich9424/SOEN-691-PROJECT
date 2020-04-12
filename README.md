@@ -147,20 +147,14 @@ The Zomato API provides exhaustive information about each food joint by differen
 
   * <b>Alternating Least Squares (ALS) :</b>  Apache Spark ML implements alternating least squares (ALS) for collaborative filtering, a very popular algorithm for making recommendations. ALS recommender is a matrix factorization algorithm that uses Alternating Least Squares with Weighted-Lamda-Regularization (ALS-WR). It factors the user to item matrix A into the user-to-feature matrix U and the item-to-feature matrix M: It runs the ALS algorithm in a parallel fashion.  
 
-  ALS is an iterative optimization process where we for every iteration try to arrive closer and closer to a factorized representation of our original data.
-  if we fix the set of variables X and treat
-them as constants, then the objective is a convex function of Y and vice versa. Our approach will
-1
-therefore be to fix Y and optimize X, then fix X and optimize Y , and repeat until convergence.
-This approach is known as ALS(Alternating Least Squares). For our objective function, the
-alternating least squares algorithm is as follows:
+  ALS is an iterative optimization process where we for every iteration try to arrive closer and closer to a factorized representation of our original data. if we fix the set of variables X and treat them as constants, then the objective is a convex function of Y and vice versa. Our approach will 1, therefore, be to fix Y and optimize X, then fix X and optimize Y, and repeat until convergence. This approach is known as ALS(Alternating Least Squares). For our objective function, the alternating least squares algorithm is as follows:  
 
         * <b> Algorithm : </b> Algorithm of ALS
 
   
+
          <p align="center"><img src="https://github.com/saich9424/SOEN-691-PROJECT/blob/master/images/als%20algorithm.png" width="500"></p>
-         
-         
+
 
 
 
