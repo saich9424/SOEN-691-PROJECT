@@ -149,11 +149,9 @@ The Zomato API provides exhaustive information about each food joint by differen
 
   ALS is an iterative optimization process where we for every iteration try to arrive closer and closer to a factorized representation of our original data. if we fix the set of variables X and treat them as constants, then the objective is a convex function of Y and vice versa. Our approach will 1, therefore, be to fix Y and optimize X, then fix X and optimize Y, and repeat until convergence. This approach is known as ALS(Alternating Least Squares). For our objective function, the alternating least squares algorithm is as follows:  
 
-        * <b> Algorithm : </b> Algorithm of ALS
+    * <b> Algorithm : </b> Algorithm of ALS
 
-  
-
-         <p align="center"><img src="https://github.com/saich9424/SOEN-691-PROJECT/blob/master/images/als%20algorithm.png" width="500"></p>
+      <p align="center"><img src="https://github.com/saich9424/SOEN-691-PROJECT/blob/master/images/als%20algorithm.png" width="500"></p>
 
 
 
