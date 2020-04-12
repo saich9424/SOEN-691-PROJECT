@@ -48,22 +48,32 @@ These two studies can be taken into consideration into initial stages of data pr
 
 This dataset is not officially provided by the Data Owner. It is collected using the APIs. It is publicly available and uploaded by the user who has colllected and updated the data over the period of time. 
 
-The dataset consists of two csv files. One csv file containes all the different restaurant and it's attributes. There are more than 40k restaurants. The other file contains the review provided by different user to different restaurants. The rating scale is [1, 5]. It has more than 1000k rows where each row represents the review and rating given by the user. Looking at the the number of restaurants and reviews, we think it is enough to be considered for big data. 
+The dataset consists of two csv files. One csv file containes all the different restaurant and it's attributes. There are more than 40k restaurants. The other file contains the review provided by different user to different restaurants. 
+
+* Restaurant.csv
+  * <b>restaurant_id :</b> unique Id for restaurant <br />
+    &nbsp;   &nbsp;   &nbsp; We have chosen this column to uniquly identify restaurant.
+   * <b>city :</b> where restaurant resides. <br />
+    &nbsp;   &nbsp;   &nbsp; We have chosen this column if the user want to filter based on city.
+   * <b>categories :</b> under which category restaurant resides. <br />
+    &nbsp;   &nbsp;   &nbsp; We have chosen this column to generate the user profile.
+    * <b>total_reviews :</b> number of votes given to particular restaurant <br />
+    &nbsp;   &nbsp;   &nbsp; We have chosen this column to put thresold for minimum number of votes. If the restaurant have total     reviews less than 5. we have filtered them out. 
+
+
+The rating scale is [1, 5]. It has more than 1400k rows where each row represents the review and rating given by the user. Looking at the the number of restaurants and reviews, we think it is enough to be considered for big data. 
 
 Though it's unofficial dataset, the datset uniform but definitely not ideal. In other words, there are many attributes which definitely not going to help in calculating recommandation. So before that we need to transform the data into desired dataset.
 
 The main columns we have considered are given below.
 
-* <b>business_id :</b> unique Id for restaurant <br />
-&nbsp;   &nbsp;   &nbsp; We have chosen this column to uniquly identify restaurant.
+
 * <b>user_id :</b> unique Id for user profile <br />
 &nbsp;   &nbsp;   &nbsp; We have chosen this column to uniquly identify users.
-* <b>city :</b> where restaurant resides. <br />
-&nbsp;   &nbsp;   &nbsp; We have chosen this column if the user want to filter based on city.
+
 * <b>stars :</b> average rating of the restaurant <br />
 &nbsp;   &nbsp;   &nbsp; We have chosen this column to use these rating for content based filtering.
-* <b>review_count :</b> number of votes given to particular restaurant <br />
-&nbsp;   &nbsp;   &nbsp; We have chosen this column to put thresold for minimum number of votes.
+
 
 ### Sample Data
 
