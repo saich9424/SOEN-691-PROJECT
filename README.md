@@ -212,7 +212,6 @@ The Zomato API provides exhaustive information about each food joint by differen
 and our system is a small step in a giant ocean.
   - If we have enough data, the collaborative filtering technique provides a powerful way to recommend new items to users accurately. If you have proper and well-documented data about your items then you can achieve much higher results using this technique.
   - The collaborative recommender based on reviews was fast and easy to build compared to Content-based systems.
-  - As many recommender systems are based on large datasets. The user-item matrix used for collaborative filtering could be extremely large and sparse, which brings about the challenges in the performances of the recommendation.
 
 ### Limitations
   - As many recommender systems are based on large datasets. The user-item matrix used for collaborative filtering could be extremely large and sparse, which brings about the challenges in the performances of the recommendation.
