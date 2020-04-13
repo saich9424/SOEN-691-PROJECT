@@ -84,7 +84,7 @@ The Zomato API provides exhaustive information about each food joint by differen
 * <b>Pandas: </b> We will use Pandas for data manipulation, analysis, sorting, handling missing values, cleaning, and visualization.
 * <b>Matplotlib: </b> We will use it to generate graphs and for visualization of huge data.
 * <b>PySpark ML: </b> It is DataFrame-based machine learning APIs to let users quickly assemble and configure practical machine learning pipelines.
-* </b> Python : <b> Programming language
+* </b> Python : </b> Programming language
 
 
 ### Algorithms
@@ -140,6 +140,7 @@ The Zomato API provides exhaustive information about each food joint by differen
       
 ### Technology Implementation
 * <b>Content-based filtering :</b>
+
   * <b>Steps in Content-based filtering:  </b>
     - Loading and preprocessing of restaurants.csv and reviews.csv file's data.
     - Creating a TF-IDF Vectorizer for different categories using the formulas given above.
