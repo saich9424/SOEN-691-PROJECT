@@ -130,10 +130,6 @@ The Zomato API provides exhaustive information about each food joint by differen
 
 ## III. Results
 
-### Dataset analysis
-* <b>Data Collection: </b>Zomato has built a highly coherent and focused experience that puts the emphasis on being a comprehensive network for food-lovers. Very little on the site is superfluous. We have used the  API to collect the data.
-
-* <b>Data Handling:  </b>The data comprised of all possible features listed on Zomato like "Dine-in or Takeaway", etc. But then we switched to Kolkata as our sample city. We have removed the restaurants with null restaurant_id,user_id and filtered out restaurants based on category and city. In collaborative filtering, we have joined the restaurant and review files based on the restaurant ID.
 
 ### Dataset analysis
 * <b>Data Collection: </b>Zomato has built a highly coherent and focused experience that puts the emphasis on being a comprehensive network for food-lovers. Very little on the site is superfluous. We have used the  API to collect the data.
@@ -180,7 +176,16 @@ The Zomato API provides exhaustive information about each food joint by differen
   ```
   <p align="center"><img src="https://github.com/saich9424/SOEN-691-PROJECT/blob/master/images/range.png" width="500"></p>
   
-  ### Technology Comparison
+### Technology Comparison
+
+  Restaurants generated in Collabarative and content based filtering
+  
+  <b>Collaborative filtering </b>
+    <p align="center"><img src="https://github.com/saich9424/SOEN-691-PROJECT/blob/master/images/restaurants_collab.png" width="500"></p>
+  <b>Content-based </b>
+    <p align="center"><img src="https://github.com/saich9424/SOEN-691-PROJECT/blob/master/images/content_reco.png" width="500"></p>
+  <b>Distribution of restaurants by category </b>
+    <p align="center"><img src="https://github.com/saich9424/SOEN-691-PROJECT/blob/master/images/restaurants_name%20dist.png" width="500"></p>
 
 
 
