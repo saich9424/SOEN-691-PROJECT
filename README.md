@@ -148,7 +148,7 @@ The Zomato API provides exhaustive information about each food joint by differen
       
 ### Technology Implementation
 * <b>Content-based filtering :</b>
-  * <b>Steps in Content-based filtering:  </b> <br/>
+  * <b>Steps in Content-based filtering:  </b>
     - Loading and preprocessing of restaurants.csv and reviews.csv file's data.
     - Creating a TF-IDF Vectorizer for different categories using the formulas given above.
     - Normalizing the resturant data.
