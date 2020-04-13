@@ -192,12 +192,12 @@ The Zomato API provides exhaustive information about each food joint by differen
 * <b>Mean Absolute Error (MAE) :</b> MAE measures the average magnitude of the errors in a set of predictions, without considering their direction. It’s the average over the test sample of the absolute differences between prediction and actual observation where all individual differences have equal weight.
 * <b>Mean Squared Error (MSE) :</b> MSE measures average squared error of our predictions. For each point, it calculates square difference between the predictions and the target and then average those values.
 
-| Metric | Content Based Filtering | Collaborative Metric |
-| :---: | --- | ---|
-| RMSE | 1.406242291057611 | 1.2542102156106667 |
-| MAE | 1.174760279634468 | 0.9522392380468712 |
-| MSE | 1.9775173811589584 | 1.5730432649421549 |
-| Runtime | 930000 ms | 768000 ms |
+    | Metric | Content Based Filtering | Collaborative Metric |
+    | :---: | --- | ---|
+    | RMSE | 1.406242291057611 | 1.2542102156106667 |
+    | MAE | 1.174760279634468 | 0.9522392380468712 |
+    | MSE | 1.9775173811589584 | 1.5730432649421549 |
+    | Runtime | 930000 ms | 768000 ms |
 
 ### Conclusion
   - The RMSE, MEA, and MSE of content-based is higher than the collaborative. The ALS based filtering technique better predicts the rating.
@@ -205,7 +205,7 @@ The Zomato API provides exhaustive information about each food joint by differen
   - Content-based recommended the restaurants that have high review count whereas collaborative recommendations tend to have higher ratings and lower review count.
   - Collaborative Filtering algorithm has the limitations of Cold-start problem where a recommender does not have adequate information about a user or an item to make relevant predictions. Data Sparsity Is the problem that occurs as a result of a lack of information.
 
-## IV. Limitations & Future Work
+## IV. Discussion 
 
 ### Limitations
 
