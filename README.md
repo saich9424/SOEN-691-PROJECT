@@ -199,23 +199,24 @@ The Zomato API provides exhaustive information about each food joint by differen
     | MSE | 1.9775173811589584 | 1.5730432649421549 |
     | Runtime | 930000 ms | 768000 ms |
 
+
+
+## IV. Discussion 
 ### Conclusion
   - The RMSE, MEA, and MSE of content-based is higher than the collaborative. The ALS based filtering technique better predicts the rating.
   - Restaurant ratings are diverse in content-based recommender.
-  - Content-based recommended the restaurants that have high review count whereas collaborative recommendations tend to have higher ratings and lower review count.
-  - Collaborative Filtering algorithm has the limitations of Cold-start problem where a recommender does not have adequate information about a user or an item to make relevant predictions. Data Sparsity Is the problem that occurs as a result of a lack of information.
-
-## IV. Discussion 
+  - Content-based recommended restaurants that have high review count whereas collaborative recommendations tend to have higher ratings and lower review count.
+  - Collaborative Filtering algorithm has the limitations of the Cold-start problem where a recommender does not have adequate information about a user or an item to make relevant predictions. Data Sparsity Is the problem that occurs as a result of a lack of information.
 
 ### Limitations
 
-* As API gives the large data around 400 gb, it is difficult to extract and process.
+* As API gives the large data around 400 GB, it is difficult to extract and process.
 * There are limited hardware resources to process and filter large data.
 
 ### Future Work
 
-* Going ahead, we can build Hybrid recommender systems. The best approach would be to use a combination of different approaches. Mix of collaborative and content-based filtering. Some of it will depend on preferences of the users and some on item features.
-* We can implement recommender systems with various algorithms such as SVD++,Bayesian Personalized Ranking (BPR) and deep learning algorithms.
+* Going ahead, we can build Hybrid recommender systems. The best approach would be to use a combination of different approaches. A mix of collaborative and content-based filtering. Some of it will depend on the preferences of the users and some on item features.
+* We can implement recommender systems with various algorithms such as SVD++, Bayesian Personalized Ranking (BPR) and deep learning algorithms.
 
 ## V. References
 
