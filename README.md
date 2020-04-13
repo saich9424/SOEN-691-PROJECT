@@ -217,12 +217,13 @@ and our system is a small step in a giant ocean.
   - As many recommender systems are based on large datasets. The user-item matrix used for collaborative filtering could be extremely large and sparse, which brings about the challenges in the performances of the recommendation.
   - As API gives the large data around 400 GB, it is difficult to extract and process.
   - There are limited hardware resources to process and filter large data.
+  - As the numbers of users and items grow, traditional CF algorithms will suffer serious scalability problems. For example, with tens of millions of customers and millions of items a CF algorithm will have large complexity
 
 ### Future Work
 
   - Going ahead, we can build Hybrid recommender systems. The best approach would be to use a combination of different approaches. A mix of collaborative and content-based filtering. Some of it will depend on the preferences of the users and some on item features.
   - We can implement recommender systems with various algorithms such as SVD++, Bayesian Personalized Ranking (BPR) and deep learning algorithms.
-  - As the numbers of users and items grow, traditional CF algorithms will suffer serious scalability problems. For example, with tens of millions of customers and millions of items a CF algorithm will have large complexity
+
 
 ## V. References
 
