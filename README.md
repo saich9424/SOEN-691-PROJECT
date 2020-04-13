@@ -140,7 +140,7 @@ The Zomato API provides exhaustive information about each food joint by differen
 
 * <b>Data Handling:  </b>The data comprised of all possible features listed on Zomato like "Dine-in or Takeaway", etc. But then we switched to Kolkata as our sample city. We have removed the restaurants with null restaurant_id,user_id and filtered out restaurants based on category and city. In collaborative filtering, we have joined the restaurant and review files based on the restaurant ID.
 
-*  Data after joining restaurants and review files for collaborative filtering
+*  <b>Data Merging:  </b>Data after joining restaurants and review files.
 
   <p align="center"><img src="https://github.com/saich9424/SOEN-691-PROJECT/blob/master/images/after%20filtering.png" width="500"></p>
   <p align="center"><img src="https://github.com/saich9424/SOEN-691-PROJECT/blob/master/images/distribution_cate.png" width="500"></p>
@@ -148,11 +148,18 @@ The Zomato API provides exhaustive information about each food joint by differen
       
 ### Technology Implementation
 * <b>Content-based filtering :</b>
+  * <b>Steps in ALS:  </b>
+    - Loading and preprocessing of data.
+    - Creating a TF-IDF Vectorizer for different categories using the formulas given above.
+    - Split data into train and test.
+    - ALS model selection and evaluation a user product matrix model.
+    - Calculate rmse
+    - Model outputs top N restaurant recommendations for that user based on the ranking of restaurant rating predictions
 
 * <b>Collaborative filtering :</b> We have used ALS with bias and the forumla for it is 
   user_item interaction+user_mean+item_mean global rating
   * <b>Steps in ALS:  </b>
-    - User restaurant review data is collected ,Parse the data into the input format for the ALS algorithm and built user-restaurant           interaction model  
+    - User restaurant review data is collected, Parse the data into the input format for the ALS algorithm and built user-restaurant           interaction model  
     - Split data into train and test
     - ALS model selection and evaluation a user product matrix model.
     - Calculate rmse
