@@ -207,16 +207,23 @@ The Zomato API provides exhaustive information about each food joint by differen
   - Restaurant ratings are diverse in content-based recommender.
   - Content-based recommended restaurants that have high review count whereas collaborative recommendations tend to have higher ratings and lower review count.
   - Collaborative Filtering algorithm has the limitations of the Cold-start problem where a recommender does not have adequate information about a user or an item to make relevant predictions. Data Sparsity Is the problem that occurs as a result of a lack of information.
+  - Content-based system Doesn't take into account what others think of the item, so low quality item recommendations might happen.
+  - Our system can be easily extended to other cities and cuisines. Our system has immense potential and is multipurpose as it can  come handy for businesses as well as the average user. The field of restaurant recommendations is one of the uncharted territories
+and our system is a small step in a giant ocean.
+  - If we have enough data, the collaborative filtering technique provides a powerful way to recommend new items to users accurately. If you have proper and well-documented data about your items then you can achieve much higher results using this technique.
+  - The collaborative recommender based on reviews was fast and easy to build compared to Content-based systems.
+  - As many recommender systems are based on large datasets. The user-item matrix used for collaborative filtering could be extremely large and sparse, which brings about the challenges in the performances of the recommendation.
 
 ### Limitations
-
-* As API gives the large data around 400 GB, it is difficult to extract and process.
-* There are limited hardware resources to process and filter large data.
+  - As many recommender systems are based on large datasets. The user-item matrix used for collaborative filtering could be extremely large and sparse, which brings about the challenges in the performances of the recommendation.
+  - As API gives the large data around 400 GB, it is difficult to extract and process.
+  - There are limited hardware resources to process and filter large data.
 
 ### Future Work
 
-* Going ahead, we can build Hybrid recommender systems. The best approach would be to use a combination of different approaches. A mix of collaborative and content-based filtering. Some of it will depend on the preferences of the users and some on item features.
-* We can implement recommender systems with various algorithms such as SVD++, Bayesian Personalized Ranking (BPR) and deep learning algorithms.
+  - Going ahead, we can build Hybrid recommender systems. The best approach would be to use a combination of different approaches. A mix of collaborative and content-based filtering. Some of it will depend on the preferences of the users and some on item features.
+  - We can implement recommender systems with various algorithms such as SVD++, Bayesian Personalized Ranking (BPR) and deep learning algorithms.
+  - As the numbers of users and items grow, traditional CF algorithms will suffer serious scalability problems. For example, with tens of millions of customers and millions of items a CF algorithm will have large complexity
 
 ## V. References
 
