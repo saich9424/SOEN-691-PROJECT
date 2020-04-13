@@ -84,7 +84,7 @@ The Zomato API provides exhaustive information about each food joint by differen
 * <b>Pandas: </b> We will use Pandas for data manipulation, analysis, sorting, handling missing values, cleaning, and visualization.
 * <b>Matplotlib: </b> We will use it to generate graphs and for visualization of huge data.
 * <b>PySpark ML: </b> It is DataFrame-based machine learning APIs to let users quickly assemble and configure practical machine learning pipelines.
-* </b> Python : </b> Programming language
+* <b> Python : </b> Programming language
 
 
 ### Algorithms
@@ -145,7 +145,7 @@ The Zomato API provides exhaustive information about each food joint by differen
     - Creating a TF-IDF Vectorizer for different categories using the formulas given above.
     - Normalizing the restaurant data.
     - Split data into train and test.
-    - Generating the user profile based on his/her past rating given to the restaurants. We have used 3 as the threshold value. If the past rating is below 3, we have consider that user doesn't like the restaurant otherwise he/she likes the restaurant. 
+    - Generating the user profile based on his/her past rating given to the restaurants. We have used 3 as the threshold value. If the past rating is below 3, we have considered that the user doesn't like the restaurant otherwise he/she likes the restaurant. 
     - Generating cosine similarity between user and restaurant vectors to find the distance between vectors. Then calculate the predictions using above given formula.
     - Calculate rmse, mea and mse.
     - Model outputs top N restaurant recommendations for that user based on the ranking of restaurant rating predictions.
@@ -155,7 +155,7 @@ The Zomato API provides exhaustive information about each food joint by differen
   * <b>Steps in ALS:  </b>
     - User restaurant review data is collected, Parse the data into the input format for the ALS algorithm and built user-restaurant           interaction model  
     - Split data into train and test
-    - ALS model selection and evaluation a user product matrix model.
+    - ALS model selection and evaluation of a user product matrix model.
     - Calculate rmse, mea and mse
     - Model outputs top N restaurant recommendations for that user based on the ranking of restaurant rating predictions
 
@@ -174,7 +174,7 @@ The Zomato API provides exhaustive information about each food joint by differen
   
 ### Technology Comparison
 
-  Restaurants generated in Collabarative and content based filtering
+  Restaurants generated in Collaborative and Content-based filtering
   
   <b>Collaborative filtering </b>
     <p align="center"><img src="https://github.com/saich9424/SOEN-691-PROJECT/blob/master/images/restaurants_collab.png" width="500"></p>
@@ -189,7 +189,7 @@ The Zomato API provides exhaustive information about each food joint by differen
 
 * <b>Root Mean Squared Error (RMSE) :</b> RMSE is a quadratic scoring rule that also measures the average magnitude of the error. It’s the square root of the average of squared differences between prediction and actual observation.
 * <b>Mean Absolute Error (MAE) :</b> MAE measures the average magnitude of the errors in a set of predictions, without considering their direction. It’s the average over the test sample of the absolute differences between prediction and actual observation where all individual differences have equal weight.
-* <b>Mean Squared Error (MSE) :</b> MSE measures average squared error of our predictions. For each point, it calculates square difference between the predictions and the target and then average those values.
+* <b>Mean Squared Error (MSE) :</b> MSE measures average squared error of our predictions. For each point, it calculates the square difference between the predictions and the target and then averages those values.
 
     | Metric | Content Based Filtering | Collaborative Metric |
     | :---: | --- | ---|
@@ -202,11 +202,11 @@ The Zomato API provides exhaustive information about each food joint by differen
 
 ## IV. Discussion 
   ### Conclusion
-  - The RMSE, MEA, and MSE of content-based is higher than that of the collaborative. The ALS based filtering technique better predicts the rating.
+  - The RMSE, MEA, and MSE of content-based are higher than that of the collaborative. The ALS based filtering technique better predicts the rating.
   - Restaurant ratings are diverse in content-based recommender.
   - Content-based recommended restaurants have high review count whereas collaborative recommendations tend to have higher ratings and lower review count.
   - Collaborative Filtering algorithm has the limitations of the Cold-start problem where a recommender does not have adequate information about a user or an item to make relevant predictions. Data Sparsity is the problem that occurs as a result of lack of information.
-  - Content-based system doesn't take into account what others think of the item which results in low-quality item recommendations.
+  - The Content-based system doesn't take into account what others think of the item which results in low-quality item recommendations.
   - Our system can be easily extended to other cities and cuisines. It has an immense potential and is multipurpose as it can come handy for businesses as well as individual users. The field of restaurant recommendations is one of the uncharted territories and our system is a small step in a giant ocean.
   - If you have enough data, the collaborative filtering technique provides a powerful way to recommend new items to users accurately. If you have proper and well-documented data about your items then you can achieve much higher results using this technique.
   - The collaborative recommender based on reviews was fast and easy to build compared to Content-based systems.
