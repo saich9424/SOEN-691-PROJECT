@@ -49,21 +49,21 @@ These studies are done using algorithms such as Naive Bayes, K-NN. Metrics like 
 
 The Zomato API provides exhaustive information about each food joint by different filters like location, cuisine, etc. The data is collected using the API. The dataset consists of two CSV files. One CSV file contains all the different restaurants and their attributes for more than 40k restaurants. The other file contains the review provided by different users to those restaurants. The rating scale is [1, 5]. It has more than 1000k rows where each row represents the review and rating given by the user. Looking at the number of restaurants and reviews, we think the dataset is big enough for this project.
 
-* <b>Restaurant.csv </b> : This dataset contains 42K unique restaurants along with different attribues of each restaurants. We are interested in the below given columns.
+* <b>Restaurant.csv </b> : This dataset contains 42K unique restaurants along with different attribues of each restaurants. We have chosen the below given columns:
   * <b>restaurant_id :</b> unique id for restaurant <br />
-    * We have chosen this column to uniquely identify restaurant.
+    * to uniquely identify restaurant.
   * <b>city :</b> where restaurant resides. <br />
-    * We have chosen this column to filter based on city.
+    * to filter based on city.
   * <b>categories :</b> under which category restaurant resides. <br />
-    * We have chosen this column to generate the item profile.
+    * to generate the item profile.
   * <b>total_reviews :</b> number of votes given to particular restaurant <br />
-    * We have chosen this column to put the threshold for a minimum number of votes. If the restaurant has total reviews less than five. we have filtered them out. 
+    * to put the threshold for a minimum number of votes. If the restaurant has total reviews less than five, we have filtered them out. 
 
-* <b>Reviews.csv : </b> This dataset contains more than 1400k rows where each row represents the review and rating given by the user. The rating scale is [1, 5]. We are interested in below given columns.
+* <b>Reviews.csv : </b> This dataset contains more than 1400k rows where each row represents the review and rating given by the user. The rating scale is [1, 5]. We have chosen the below given columns:
   * <b>user_id :</b> unique Id for user. <br />
-    * We have chosen this column to uniquely identify users.
+    * to uniquely identify users.
   * <b>user_rating :</b> rating given by a user to the restaurant. <br />
-    * We have chosen this column if the user wants to filter based on city.
+    * to filter based on city.
 
 
 
@@ -80,18 +80,18 @@ The Zomato API provides exhaustive information about each food joint by differen
 
 ### Technologies
 
-* <b>Apache Spark: </b>Apache Spark is a unified analytics engine for big data processing. We will use Dataframe API and  Resilient Distributed Dataset (RDD) for data preprocessing and building data frames.
-* <b>Pandas: </b>We will use Pandas for data manipulation, analysis, sorting, handling missing values, cleaning, and visualization.
+* <b>Apache Spark: </b> It is a unified analytics engine for big data processing. We will use Dataframe API and  Resilient Distributed Dataset (RDD) for data preprocessing and building data frames.
+* <b>Pandas: </b> We will use Pandas for data manipulation, analysis, sorting, handling missing values, cleaning, and visualization.
 * <b>Matplotlib: </b> We will use it to generate graphs and for visualization of huge data.
-* <b>PySpark ML: </b> It is  DataFrame-based machine learning APIs to let users quickly assemble and configure practical machine learning pipelines.
-* <b>Programming language: </b> Python
+* <b>PySpark ML: </b> It is DataFrame-based machine learning APIs to let users quickly assemble and configure practical machine learning pipelines.
+* </b> Python : <b> Programming language
 
 
 ### Algorithms
 
-* <b>Content-based filtering :</b> We have implemented the below-given algorithm for Content-based filtering. In this algorithm, we will use item metadata, such as Locality, Category, Rating, etc. for restaurants, to make these recommendations. Here, we have solely relied on item data rather than other user's metadata.
+* <b>Content-based filtering :</b> We have implemented the below given algorithm for Content-based filtering. In this algorithm, we will use item metadata such as Locality, Category, Rating, etc. for restaurants to make recommendations. Here we have solely relied on item data rather than other user's metadata.
 
-  * <b> TF * IDF algorithm : </b> TF \* IDF is an information retrieval technique that weighs a category’s frequency (TF) and its inverse frequency (IDF). The product of the TF and IDF scores of a category is called the TF \* IDF weight of that restaurant category. The TF-IDF score of the category is calculated using below given formulas.
+  * <b> TF * IDF algorithm : </b> TF \* IDF is an information retrieval technique that weighs a category’s frequency (TF) and its inverse frequency (IDF). The product of the TF and IDF scores of a category is called the TF \* IDF weight of that restaurant category. The TF-IDF score of the category is calculated using the below mentioned formulas.
   
        <p align="center"><img src="https://github.com/saich9424/SOEN-691-PROJECT/blob/master/images/TF.png" width="500"></p>
 
@@ -100,13 +100,13 @@ The Zomato API provides exhaustive information about each food joint by differen
    * <b> Prediction : </b> First, we have calculated the cosine similarity between the User vector and Restaurant vector. After finding the cosine similarity we have used below given formula to calculate the user prediction.
       <p align="center"><img src="https://github.com/saich9424/SOEN-691-PROJECT/blob/master/images/Cosine.PNG" width="600"></p>
       
-      Where r is a user vector and r' is restaurant vector. Using the above-mentioned formula we can find the theta, which implies the distance in terms of angle. Lesser the theta, more the similarity. We can calculate the distance using 180 - theta. The two vectors that we wish to calculate the distance; r_i and r'_i are components of vector r and r' respectively; and i is the number of components we have
+      Where r is a user vector and r' is restaurant vector. Using the above-mentioned formula we can find the theta, which implies the distance in terms of angle. Lesser the theta , more the similarity. We can calculate the distance using 180 - theta. The two vectors that we wish to calculate the distance; r_i and r'_i are components of vector r and r' respectively; and i is the number of components we have
 
       <p align="center"><img src="https://github.com/saich9424/SOEN-691-PROJECT/blob/master/images/Prediction.png" width="600"></p>
       
       Using this formula, we are calculating the predicted value. In the formula, x is the cosine similarity as calculated in the previous formula. Here, x_max and x_min represents the threshold values of user values which is 1 or -1. And r_max and r_min represents the threshold values of rating. The rating scale is [1, 5].
 
-* <b>Collaborative filtering :</b> Unlike content-based filtering, this systems doesn’t require description of the data hence it recommends without knowing anything about the products.
+* <b>Collaborative filtering :</b> Unlike content-based filtering, this systems doesn’t require description of the data. Hence it recommends without knowing anything about the products.
 
   * <b>Alternating Least Squares (ALS) :</b>  Apache Spark ML implements alternating least squares (ALS) for collaborative filtering, a very popular algorithm for making recommendations. ALS recommender is a matrix factorization algorithm that uses Alternating Least Squares with Weighted-Lamda-Regularization (ALS-WR). It factors the user to item matrix A into the user-to-feature matrix U and the item-to-feature matrix M: It runs the ALS algorithm in a parallel fashion.  
 
@@ -130,7 +130,7 @@ The Zomato API provides exhaustive information about each food joint by differen
 ### Dataset analysis
 * <b>Data Collection: </b>Zomato has built a highly coherent and focused experience that puts the emphasis on being a comprehensive network for food-lovers. Very little on the site is superfluous. We have used the  API to collect the data.
 
-* <b>Data Handling:  </b>The data comprised of all possible features listed on Zomato like "Dine-in or Takeaway", etc. But then we switched to Kolkata as our sample city. We have removed the restaurants with null restaurant_id,user_id and filtered out restaurants based on category and city. In collaborative filtering, we have joined the restaurant and review files based on the restaurant ID.
+* <b>Data Handling:  </b>The data is comprised of all possible features listed on Zomato like "Dine-in or Takeaway", etc. We used Kolkata as our sample city. We have removed the restaurants with null restaurant_id,user_id and filtered out restaurants based on category and city. In collaborative filtering, we have joined the restaurant and review files based on the restaurant ID.
 
 *  <b>Data Merging:  </b>Data after joining restaurants and review files.
 
@@ -202,26 +202,26 @@ The Zomato API provides exhaustive information about each food joint by differen
 
 ## IV. Discussion 
 ### Conclusion
-  - The RMSE, MEA, and MSE of content-based is higher than the collaborative. The ALS based filtering technique better predicts the       rating.
+  - The RMSE, MEA, and MSE of content-based is higher than that of the collaborative. The ALS based filtering technique better predicts     the rating.
   - Restaurant ratings are diverse in content-based recommender.
-  - Content-based recommended restaurants that have high review count whereas collaborative recommendations tend to have higher ratings     and lower review count.
-  - Collaborative Filtering algorithm has the limitations of the Cold-start problem where a recommender does not have adequate               information about a user or an item to make relevant predictions. Data Sparsity Is the problem that occurs as a result of a lack of     information.
-  - Content-based system Doesn't take into account what others think of the item, so low-quality item recommendations might happen.
-  - Our system can be easily extended to other cities and cuisines. Our system has immense potential and is multipurpose as it can come     handy for businesses as well as the average user. The field of restaurant recommendations is one of the uncharted territories
+  - Content-based recommended restaurants have high review count whereas collaborative recommendations tend to have higher ratings     and lower review count.
+  - Collaborative Filtering algorithm has the limitations of the Cold-start problem where a recommender does not have adequate               information about a user or an item to make relevant predictions. Data Sparsity is the problem that occurs as a result of lack of     information.
+  - Content-based system doesn't take into account what others think of the item which results in low-quality item recommendations.
+  - Our system can be easily extended to other cities and cuisines. It has an immense potential and is multipurpose as it can come     handy for businesses as well as individual users. The field of restaurant recommendations is one of the uncharted territories
     and our system is a small step in a giant ocean.
-  - If we have enough data, the collaborative filtering technique provides a powerful way to recommend new items to users accurately. If     you have proper and well-documented data about your items then you can achieve much higher results using this technique.
+  - If you have enough data, the collaborative filtering technique provides a powerful way to recommend new items to users accurately. If you have proper and well-documented data about your items then you can achieve much higher results using this technique.
   - The collaborative recommender based on reviews was fast and easy to build compared to Content-based systems.
 
 ### Limitations
   - As many recommender systems are based on large datasets. The user-item matrix used for collaborative filtering could be extremely       large and sparse, which brings about the challenges in the performances of the recommendation.
   - As API gives the large data around 400 GB, it is difficult to extract and process.
   - There are limited hardware resources to process and filter large data.
-  - As the numbers of users and items grow, traditional CF algorithms will suffer serious scalability problems. For example, with tens of millions of customers and millions of items, a CF algorithm will have large complexity
+  - As the numbers of users and items grow, traditional CF algorithms will suffer serious scalability problems. For example, with tens of millions of customers and millions of items, a CF algorithm will have large complexity.
 
 
 ### Future Work
 
-  - Going ahead, we can build Hybrid recommender systems. The best approach would be to use a combination of different approaches. A mix of collaborative and content-based filtering. Some of it will depend on the preferences of the users and some on item features.
+  - Going ahead, we can build Hybrid recommender systems. The best approach would be to use a combination of different approaches i.e. a mix of collaborative and content-based filtering. Some of it will depend on the preferences of the users and some on item features.
   - We can implement recommender systems with various algorithms such as SVD++, Bayesian Personalized Ranking (BPR) and deep learning algorithms.
 
 
