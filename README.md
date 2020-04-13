@@ -12,8 +12,7 @@
 Dataset Analysis (Recommender System)
 
 ## Abstract
-In the given dataset we have more than 40k restaurants scattered across different metro cities. Our goal is to build the recommender system as recommender Engines or Systems are among the most popular applications of data science today.These systems  are used to predict the “rating” or “preference” that a user would give to an item. We will implement two recommender systems, which will be content based and colloberative filtering based using algorithms ALS and TF-IDF in Apache Spark. We will evaluate the results based on RMSE and other metrics and recommend restaurants to the user.
-
+Our goal is to build the recommender system as recommender Engines or Systems are among the most popular applications of data science today. These systems are used to predict the “rating” or “preference” that a user would give to an item. We will implement two recommender systems, which will be content-based and collaborative filtering based using algorithms ALS and TF-IDF in Apache Spark. We will evaluate the results based on RMSE and other metrics and recommend restaurants to the user.
 ## I. Introduction
 ### Context
 
@@ -23,7 +22,7 @@ historical data. Zomato is a very good source of such data with not only restaur
 
 ### Objectives
 
-The main goal of the project is to build collaborative and content-based recommender systems based on the user ratings. These are the two main recommender systems discussed in class. Collaborative filtering approaches building a model from a user's past behavior whereas Content-based filtering approaches utilize a series of discrete characteristics of an item in order to recommend additional items with similar properties.
+The main goal of the project is to build collaborative and content-based recommender systems based the user ratings. These are the two main recommender systems discussed in class. Collaborative filtering approaches building a model from a user's past behaviour  whereas Content-based filtering approaches utilize a series of discrete characteristics of an item in order to recommend additional items with similar properties.
 
 ### Presentation of the problem to solve
 
@@ -52,19 +51,19 @@ The Zomato API provides exhaustive information about each food joint by differen
 
 * <b>Restaurant.csv </b> : This dataset contains 42K unique restaurants along with different attribues of each restaurants. We are interrested in below given columns.
   * <b>restaurant_id :</b> unique id for restaurant <br />
-    * We have chosen this column to uniquly identify restaurant.
+    * We have chosen this column to uniquely identify restaurant.
   * <b>city :</b> where restaurant resides. <br />
     * We have chosen this column to filter based on city.
   * <b>categories :</b> under which category restaurant resides. <br />
     * We have chosen this column to generate the item profile.
   * <b>total_reviews :</b> number of votes given to particular restaurant <br />
-    * We have chosen this column to put thresold for minimum number of votes. If the restaurant have total     reviews less than five. we have filtered them out. 
+    * We have chosen this column to put the threshold for a minimum number of votes. If the restaurant has total reviews less than five. we have filtered them out. 
 
-* <b>Reviews.csv : </b> This dataset contains more than 1400k rows where each row represents the review and rating given by the user. The rating scale is [1, 5]. We are interrested in below given columns.
+* <b>Reviews.csv : </b> This dataset contains more than 1400k rows where each row represents the review and rating given by the user. The rating scale is [1, 5]. We are interested in below given columns.
   * <b>user_id :</b> unique Id for user. <br />
-    * We have chosen this column to uniquly identify users.
+    * We have chosen this column to uniquely identify users.
   * <b>user_rating :</b> rating given by a user to the restaurant. <br />
-    * We have chosen this column if the user want to filter based on city.
+    * We have chosen this column if the user wants to filter based on city.
 
 
 
