@@ -202,7 +202,7 @@ The Zomato API provides exhaustive information about each food joint by differen
 
 ### Conclusion
 
-* The RMSE of content based is higher than the collaborative.
+* The RMSE, MEA and MSE of content based is higher than the collaborative. In other words, als based filtering technique better predicts the rating.
 * Restaurant ratings are diverse in content-based recommender.
 * Content based recommended the restaurants that have high review count whereas collaborative recommendations tend to have higher ratings and lower review count.
 * Collaborative Filtering algorithm has the limitations of Cold-start problem where a recommender does not have the adequate information about a user or an item to make relevant predictions. Data Sparsity Is the problem that occurs as a result of lack of enough information.
