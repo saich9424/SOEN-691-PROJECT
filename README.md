@@ -28,11 +28,11 @@ The main goal of the project is to build collaborative and content-based recomme
 
 * <b>Problem: </b> Build a recommendation system based on user reviews and choices.
 
-  <b>Solution: </b>First we will analyze the existing data, transform the data. And then we will recommend the restaurant to users based on Content-Based and Collaborative systems
+  <b>Solution: </b>First we will analyze the existing data, transform the data. Secondly, we will recommend the restaurant to users based on Content-Based and Collaborative systems
 
 * <b>Problem : </b> Out of these two algorithms, which algorithm performs better.
  
-  <b>Solution: </b> We will evaluate the results of each algorithm using metrics like RMSE, MAE & MSE. Then we can compare these results to find out the best performing algorithm.
+  <b>Solution: </b> We will evaluate the results of each algorithm using metrics like RMSE, MAE & MSE and compare these results to find out the best performing algorithm.
 
 ### Related work 
 
@@ -41,15 +41,15 @@ There are many data analysis papers on this datataset. <br />
 * https://www.kaggle.com/parthsharma5795/finding-the-best-restaurants-in-bangalore <br />
 * https://www.kaggle.com/chirag9073/zomato-restaurants-analysis-and-prediction <br />
 
-These studies are done using algorithms such as Naive Bayes, K-NN algorithms and metrics like RMSE, MAE is used to evaluate the result and some studies are at analyzing the data. We will build the recommender system using collaborative, Content-based approaches for the user base and analyze the results.
+These studies are done using algorithms such as Naive Bayes, K-NN. Metrics like RMSE, MAE are used to evaluate the result. Most of the  studies are at analyzing the data. We will build the recommender system using collaborative and content-based approaches for the user base to analyze the results.
 
 ## II. Materials and Methods
 
 ### Dataset
 
-The Zomato API provides exhaustive information about each food joint by different filters like location, cuisine, etc. The data is collected using the API. The dataset consists of two CSV files. One CSV file contains all the different restaurants and their attributes. There are more than 40k restaurants. The other file contains the review provided by different users to different restaurants. The rating scale is [1, 5]. It has more than 1000k rows where each row represents the review and rating given by the user. Looking at the number of restaurants and reviews, we think it is enough to be considered for big data.
+The Zomato API provides exhaustive information about each food joint by different filters like location, cuisine, etc. The data is collected using the API. The dataset consists of two CSV files. One CSV file contains all the different restaurants and their attributes for more than 40k restaurants. The other file contains the review provided by different users to those restaurants. The rating scale is [1, 5]. It has more than 1000k rows where each row represents the review and rating given by the user. Looking at the number of restaurants and reviews, we think the dataset is big enough for this project.
 
-* <b>Restaurant.csv </b> : This dataset contains 42K unique restaurants along with different attribues of each restaurants. We are interrested in below given columns.
+* <b>Restaurant.csv </b> : This dataset contains 42K unique restaurants along with different attribues of each restaurants. We are interested in the below given columns.
   * <b>restaurant_id :</b> unique id for restaurant <br />
     * We have chosen this column to uniquely identify restaurant.
   * <b>city :</b> where restaurant resides. <br />
