@@ -149,11 +149,12 @@ The Zomato API provides exhaustive information about each food joint by differen
 ### Technology Implementation
 * <b>Content-based filtering :</b>
   * <b>Steps in ALS:  </b>
-    - Loading and preprocessing of data.
+    - Loading and preprocessing of restaurants.csv and reviews.csv file's data.
     - Creating a TF-IDF Vectorizer for different categories using the formulas given above.
+    - Normalizing the resturant data.
     - Split data into train and test.
-    - ALS model selection and evaluation a user product matrix model.
-    - Calculate rmse
+    - Generating the user profile based on his/her past rating given to the restaurants.
+    - Calculate rmse, mea and mse
     - Model outputs top N restaurant recommendations for that user based on the ranking of restaurant rating predictions
 
 * <b>Collaborative filtering :</b> We have used ALS with bias and the forumla for it is 
@@ -162,7 +163,7 @@ The Zomato API provides exhaustive information about each food joint by differen
     - User restaurant review data is collected, Parse the data into the input format for the ALS algorithm and built user-restaurant           interaction model  
     - Split data into train and test
     - ALS model selection and evaluation a user product matrix model.
-    - Calculate rmse
+    - Calculate rmse, mea and mse
     - Model outputs top N restaurant recommendations for that user based on the ranking of restaurant rating predictions
 
   * <b>ALS Hyperparams:  </b> These are the optimized values
