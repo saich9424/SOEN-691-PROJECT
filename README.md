@@ -153,7 +153,7 @@ The Zomato API provides exhaustive information about each food joint by differen
     - Creating a TF-IDF Vectorizer for different categories using the formulas given above.
     - Normalizing the resturant data.
     - Split data into train and test.
-    - Generating the user profile based on his/her past rating given to the restaurants.
+    - Generating the user profile based on his/her past rating given to the restaurants. We have used 3 as the thresold value. If the past rating is below 3, we have consider that user doesn't like the restaurant otherwise he/she likes the restaurant. 
     - Calculate rmse, mea and mse
     - Model outputs top N restaurant recommendations for that user based on the ranking of restaurant rating predictions
 
