@@ -122,11 +122,8 @@ The Zomato API provides exhaustive information about each food joint by differen
 
 
 
-### Metrics
 
-* <b>Root Mean Squared Error (RMSE) :</b> RMSE is a quadratic scoring rule that also measures the average magnitude of the error. It’s the square root of the average of squared differences between prediction and actual observation.
-* <b>Mean Absolute Error (MAE) :</b> MAE measures the average magnitude of the errors in a set of predictions, without considering their direction. It’s the average over the test sample of the absolute differences between prediction and actual observation where all individual differences have equal weight.
-* <b>Mean Squared Error (MSE) :</b> MSE measures average squared error of our predictions. For each point, it calculates square difference between the predictions and the target and then average those values.
+
 
 ## III. Results
 
@@ -189,15 +186,11 @@ The Zomato API provides exhaustive information about each food joint by differen
 
 
 
-### Recommended Restaurants
-
-* <b>Content Based Recommended Restaurants </b>
-
-![](images/Content_Based_Restaurants.png)
-
-* <b>ALS Recommended Restaurants </b>
-
 ### Metrics Results
+
+* <b>Root Mean Squared Error (RMSE) :</b> RMSE is a quadratic scoring rule that also measures the average magnitude of the error. It’s the square root of the average of squared differences between prediction and actual observation.
+* <b>Mean Absolute Error (MAE) :</b> MAE measures the average magnitude of the errors in a set of predictions, without considering their direction. It’s the average over the test sample of the absolute differences between prediction and actual observation where all individual differences have equal weight.
+* <b>Mean Squared Error (MSE) :</b> MSE measures average squared error of our predictions. For each point, it calculates square difference between the predictions and the target and then average those values.
 
 | Metric | Content Based Filtering | Collaborative Metric |
 | :---: | --- | ---|
@@ -207,11 +200,10 @@ The Zomato API provides exhaustive information about each food joint by differen
 | Runtime | 930000 ms | 768000 ms |
 
 ### Conclusion
-
-* The RMSE, MEA and MSE of content based is higher than the collaborative. In other words, als based filtering technique better predicts the rating.
-* Restaurant ratings are diverse in content-based recommender.
-* Content based recommended the restaurants that have high review count whereas collaborative recommendations tend to have higher ratings and lower review count.
-* Collaborative Filtering algorithm has the limitations of Cold-start problem where a recommender does not have the adequate information about a user or an item to make relevant predictions. Data Sparsity Is the problem that occurs as a result of lack of enough information.
+  - The RMSE, MEA, and MSE of content-based is higher than the collaborative. The ALS based filtering technique better predicts the rating.
+  - Restaurant ratings are diverse in content-based recommender.
+  - Content-based recommended the restaurants that have high review count whereas collaborative recommendations tend to have higher ratings and lower review count.
+  - Collaborative Filtering algorithm has the limitations of Cold-start problem where a recommender does not have adequate information about a user or an item to make relevant predictions. Data Sparsity Is the problem that occurs as a result of a lack of information.
 
 ## IV. Limitations & Future Work
 
