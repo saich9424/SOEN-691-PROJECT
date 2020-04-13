@@ -140,16 +140,15 @@ The Zomato API provides exhaustive information about each food joint by differen
       
 ### Technology Implementation
 * <b>Content-based filtering :</b>
-
-  * <b>Steps in Content-based filtering:  </b>
+  * <b>Steps in Content-based filtering:  </b>
     - Loading and preprocessing of restaurants.csv and reviews.csv file's data.
     - Creating a TF-IDF Vectorizer for different categories using the formulas given above.
     - Normalizing the restaurant data.
     - Split data into train and test.
-    - Generating the user profile based on his/her past rating given to the restaurants. We have used 3 as the threshold value. If the         past rating is below 3, we have consider that user doesn't like the restaurant otherwise he/she likes the restaurant. 
-    - Generating cosine similarity between user and restaurant vectors to find the distance between vectors. Then calculate the               predictions using above given formula.
-    - Calculate rmse, mea and mse
-    - Model outputs top N restaurant recommendations for that user based on the ranking of restaurant rating predictions
+    - Generating the user profile based on his/her past rating given to the restaurants. We have used 3 as the threshold value. If the past rating is below 3, we have consider that user doesn't like the restaurant otherwise he/she likes the restaurant. 
+    - Generating cosine similarity between user and restaurant vectors to find the distance between vectors. Then calculate the predictions using above given formula.
+    - Calculate rmse, mea and mse.
+    - Model outputs top N restaurant recommendations for that user based on the ranking of restaurant rating predictions.
 
 * <b>Collaborative filtering :</b> We have used ALS with bias and the forumla for it is 
   user_item interaction+user_mean+item_mean global rating
@@ -202,28 +201,27 @@ The Zomato API provides exhaustive information about each food joint by differen
 
 
 ## IV. Discussion 
-### Conclusion
-  - The RMSE, MEA, and MSE of content-based is higher than that of the collaborative. The ALS based filtering technique better predicts     the rating.
-  - Restaurant ratings are diverse in content-based recommender.
-  - Content-based recommended restaurants have high review count whereas collaborative recommendations tend to have higher ratings     and lower review count.
-  - Collaborative Filtering algorithm has the limitations of the Cold-start problem where a recommender does not have adequate               information about a user or an item to make relevant predictions. Data Sparsity is the problem that occurs as a result of lack of     information.
-  - Content-based system doesn't take into account what others think of the item which results in low-quality item recommendations.
-  - Our system can be easily extended to other cities and cuisines. It has an immense potential and is multipurpose as it can come     handy for businesses as well as individual users. The field of restaurant recommendations is one of the uncharted territories
-    and our system is a small step in a giant ocean.
-  - If you have enough data, the collaborative filtering technique provides a powerful way to recommend new items to users accurately. If you have proper and well-documented data about your items then you can achieve much higher results using this technique.
-  - The collaborative recommender based on reviews was fast and easy to build compared to Content-based systems.
+  ### Conclusion
+  - The RMSE, MEA, and MSE of content-based is higher than that of the collaborative. The ALS based filtering technique better predicts the rating.
+  - Restaurant ratings are diverse in content-based recommender.
+  - Content-based recommended restaurants have high review count whereas collaborative recommendations tend to have higher ratings and lower review count.
+  - Collaborative Filtering algorithm has the limitations of the Cold-start problem where a recommender does not have adequate information about a user or an item to make relevant predictions. Data Sparsity is the problem that occurs as a result of lack of information.
+  - Content-based system doesn't take into account what others think of the item which results in low-quality item recommendations.
+  - Our system can be easily extended to other cities and cuisines. It has an immense potential and is multipurpose as it can come handy for businesses as well as individual users. The field of restaurant recommendations is one of the uncharted territories and our system is a small step in a giant ocean.
+  - If you have enough data, the collaborative filtering technique provides a powerful way to recommend new items to users accurately. If you have proper and well-documented data about your items then you can achieve much higher results using this technique.
+  - The collaborative recommender based on reviews was fast and easy to build compared to Content-based systems.
 
-### Limitations
-  - As many recommender systems are based on large datasets. The user-item matrix used for collaborative filtering could be extremely       large and sparse, which brings about the challenges in the performances of the recommendation.
-  - As API gives the large data around 400 GB, it is difficult to extract and process.
-  - There are limited hardware resources to process and filter large data.
-  - As the numbers of users and items grow, traditional CF algorithms will suffer serious scalability problems. For example, with tens of millions of customers and millions of items, a CF algorithm will have large complexity.
+  ### Limitations
+  - As many recommender systems are based on large datasets. The user-item matrix used for collaborative filtering could be extremely       large and sparse, which brings about the challenges in the performances of the recommendation.
+  - As API gives the large data around 400 GB, it is difficult to extract and process.
+  - There are limited hardware resources to process and filter large data.
+  - As the numbers of users and items grow, traditional CF algorithms will suffer serious scalability problems. For example, with tens of millions of customers and millions of items, a CF algorithm will have large complexity.
 
-
-### Future Work
+  ### Future Work
 
   - Going ahead, we can build Hybrid recommender systems. The best approach would be to use a combination of different approaches i.e. a mix of collaborative and content-based filtering. Some of it will depend on the preferences of the users and some on item features.
   - We can implement recommender systems with various algorithms such as SVD++, Bayesian Personalized Ranking (BPR) and deep learning algorithms.
+
 
 
 ## V. References
